@@ -32,7 +32,9 @@ try {
         app.use(bodyParser.urlencoded({ extended: false }));
 
         // Register routes
-        app.use(express.static(__dirname + '/www/')); // All static stuff from /app/wwww
+
+        app.use('/.well-known', express.static(__dirname + '/www/.well-known')); //static route for Letsncrypt validation
+        app.use(express.static(__dirname + '/www')); // All static stuff from /app/wwww
 
         // catch 404 and forward to error handler
         app.use(function(req: Express.Request, res: Express.Response, next: any) {
