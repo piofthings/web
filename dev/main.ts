@@ -38,7 +38,7 @@ try {
         app.use(function(req: Express.Request, res: Express.Response, next: any) {
             var err = new Error('Not Found');
             err.message = "404";
-            next(err);
+            next(err.message + ": Unhandled Error");
         });
 
         // error handlers
@@ -47,10 +47,7 @@ try {
         if (app.get('env') === 'development') {
             app.use((err: any, req: express.Request, res: express.Response, next: any) => {
                 res.status(err.status || 500);
-                res.render('error', {
-                    message: err.message,
-                    error: err
-                });
+                next(err.status || 500 + ": Unhandled Error" + err.message);
             });
         }
 
@@ -58,10 +55,7 @@ try {
         // no stacktraces leaked to user
         app.use((err: any, req: express.Request, res: express.Response, next: any) => {
             res.status(err.status || 500);
-            res.render('error', {
-                message: err.message,
-                error: {}
-            });
+            next(err.status || 500 + ": Unhandled Error");
         });
 
         var pkg = require('./package.json');
@@ -76,6 +70,5 @@ try {
     });
 }
 catch (err) {
-    console.error(err);
-
+    "Outer catch:" + console.error(err);
 }
