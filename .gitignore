@@ -37,5 +37,7 @@ jspm_packages
 .node_repl_history
 
 dev/**/*.js
-dev/typings/
+typings/
+
 dev/www/typings
+out/
