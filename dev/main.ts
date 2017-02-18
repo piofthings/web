@@ -7,7 +7,6 @@ import * as express from "express";
 
 var multer = require('multer');
 var favicon = require('serve-favicon');
-var logger = require('morgan');
 var session = require('express-session');
 var bodyParser = require('body-parser');
 

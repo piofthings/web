@@ -41,3 +41,9 @@ typings/
 
 dev/www/typings
 out/
+*.js.map
+.idea/
+
+# Custom
+certs/
+connect
