@@ -1,5 +1,3 @@
-/// <reference path="./typings/index.d.ts"/>
-
 import nconf = require('nconf');
 import { Configuration } from "./server/services/settings/config-model";
 import { Config } from "./server/services/settings/config";
@@ -55,8 +53,41 @@ try {
         httpServer.listen(3002, (): void => {
             console.log(pkg.name, 'listening on port ', httpServer.address().port);
         });
+
+        var mosca = require('mosca');
+
+        var ascoltatore = {
+          //using ascoltatore
+          type: 'mongo',
+          url: 'mongodb://192.168.0.16:27017/mqtt',
+          pubsubCollection: 'ascoltatori',
+          mongo: {}
+        };
+
+        var settings = {
+          port: 1883,
+          backend: ascoltatore
+        };
+
+        var server = new mosca.Server(settings);
+
+        server.on('clientConnected', (client: any) => {
+            console.log('client connected', client.id);
+        });
+
+        // fired when a message is received
+        server.on('published', (packet: any, client: any) => {
+          console.log('Published', packet.payload);
+        });
+
+        server.on('ready', setup);
+
+        // fired when the mqtt server is ready
+        function setup() {
+          console.log('Mosca server is up and running');
+        }
     });
-}
+} 
 catch (err) {
     "Outer catch:" + console.error(err);
 }
