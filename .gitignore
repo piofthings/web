@@ -41,9 +41,11 @@ typings/
 
 dev/www/typings
 out/
+deploy/
 *.js.map
 .idea/
 
 # Custom
 certs/
 connect
+webconfig.json

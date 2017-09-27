@@ -1,0 +1,19 @@
+div.post
+    h1
+        a(href=post.url)
+            = post.title
+    .row
+        .col-xs-12
+            span.date Published #{post.date.getMonth()+1}-#{post.date.getDate()}-#{post.date.getFullYear()}
+    .row
+        .col-xs-12
+            span By #{post.author}
+
+    div.post.content
+        != post.preview
+    div.tags
+        .row
+            each tag in post.tags
+                .col-xs-1
+                    a(href=tagUrl(tag))
+                        span.label.label-info #{tag}

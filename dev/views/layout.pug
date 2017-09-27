@@ -1,0 +1,48 @@
+doctype html
+html
+    head
+        title= 'Blog | Pi of things'
+        meta(charset='utf-8')
+        link(rel='stylesheet', href='/content/bootstrap.min.css')
+        link(rel='stylesheet' href='/content/Site.css')
+
+    body
+        .navbar.navbar-inverse.navbar-fixed-top
+            .container
+                .navbar-header
+                    button(type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse")
+                    span.icon-bar
+                    span.icon-bar
+                    span.icon-bar
+                a(href="/") #[img(class="navbar-brand" src="/images/piot-white.png")]
+
+                .navbar-collapse.collapse
+                    ul(class="nav navbar-nav")
+                        li #[a(href="/") Home]
+                        li.active #[a(href="/blog") Blog]
+                        li #[a(href="http://github.com/piofthings/web") Source]
+
+
+        .body-content(style="padding-top:55px")
+            .container
+                .row
+                    .col-sm-8.hidden-xs
+                        block content
+                    .col-sm-4
+                        .panel.panel-default
+                            .panel-heading
+                                .panel-title Categories
+                            .panel-body
+                                .form-input
+                                    select.form-control
+                                        each cat in getCategories()
+                                            option #[a(href=categoryURL(cat)) #{cat}]
+                        .panel.panel-default
+                            .panel-heading
+                                .panel-title Tags
+                            .panel-body
+                                ul.nav.nav-list
+                                    li.nav-header
+                                    each tag in getTags()
+                                        li
+                                            a(href=tagURL(tag)) #{tag}

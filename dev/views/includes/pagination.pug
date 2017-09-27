@@ -1,0 +1,10 @@
+- var pageCount = getPageCount();
+if pageCount > 1
+    ul.pagination
+        - for (var x = 1; x <= pageCount; x++)
+            if page == x
+                li(class='active')
+                    a(href=pageURL(x)) #{x}
+            else
+                li
+                    a(href=pageURL(x)) #{x}
