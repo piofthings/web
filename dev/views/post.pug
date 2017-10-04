@@ -1,16 +1,22 @@
 extends layout
 
 block content
-  div.post
-    h1
-      a(href=post.url)
-        = post.title
+    div.post
+        h1
+            a(href=post.url)
+                = post.title
 
-    span.date.h4 Published #{post.date.getMonth()+1}-#{post.date.getDate()}-#{post.date.getFullYear()}
+        p
+            span.date.h4 #{post.date.getMonth()+1}-#{post.date.getDate()}-#{post.date.getFullYear()}
 
-    div.post.content
-      != post.content
-    div.tags
-      each tag in post.tags
-        a(href=tagUrl(tag))
-          span.label.label-info #{tag}
+        .row
+            .col-xs-12
+                p
+                    span By #{post.author}
+
+        div.post.content
+            != post.content
+        div.tags
+            each tag in post.tags
+                a(href=tagUrl(tag) style="margin-right: 5px")
+                    span.label.label-info #{tag}

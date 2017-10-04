@@ -50,20 +50,31 @@ try {
         app.get('/pages', (req, res) => {
             res.render('index');
         });
-        app.get('/tags', (req, res) => {
-            res.render('index');
-        });
+
         app.get('/categories', (req, res) => {
             res.render('index');
         });
 
-        app.get('/rss', function (req, res) {
+        app.get('/rss', (req, res) => {
           // Only get the latest posts
-          var posts = poet.helpers.getPosts(0, 5);
+          var posts = poet.helpers.getPosts(0, 20);
           res.setHeader('Content-Type', 'application/rss+xml');
           res.render('rss', { posts: posts });
         });
-        
+
+        poet.addRoute('/rss/tag/:bytag', (req: any, res: any) => {
+          var tagPosts = poet.helpers.postsWithTag(req.params.bytag);
+          if (tagPosts.length) {
+            res.render('rss', {
+              posts: tagPosts,
+              tag: req.params.bytag
+            });
+          }
+        });
+
+        app.get('/tags', (req, res) => {
+            res.render('index');
+        });
         app.use('/.well-known', express.static(__dirname + '/www/.well-known')); //static route for Letsncrypt validation
         app.use(express.static(__dirname + '/www')); // All static stuff from /app/wwww
 

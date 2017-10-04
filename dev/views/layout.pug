@@ -3,46 +3,41 @@ html
     head
         title= 'Blog | Pi of things'
         meta(charset='utf-8')
-        link(rel='stylesheet', href='/content/bootstrap.min.css')
+        link(rel='stylesheet', href='/content/bootstrap/css/bootstrap.min.css')
+        link(rel='stylesheet', href='/content/font-awesome-4.7.0/css/font-awesome.min.css')
         link(rel='stylesheet' href='/content/Site.css')
-
+        script(type="text/javascript" src="/libs/jquery/jquery-3.2.1.min.js")
+        script(type="text/javascript" src="/libs/bootstrap/bootstrap.min.js")
     body
         .navbar.navbar-inverse.navbar-fixed-top
             .container
                 .navbar-header
-                    button(type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse")
-                    span.icon-bar
-                    span.icon-bar
-                    span.icon-bar
-                a(href="/") #[img(class="navbar-brand" src="/images/piot-white.png")]
-
-                .navbar-collapse.collapse
+                    button(type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-blog")
+                        span.icon-bar
+                        span.icon-bar
+                        span.icon-bar
+                    a(href="/") #[img(class="navbar-brand" src="/images/piot-white.png")]
+                .navbar-collapse.collapse(id="navbar-blog")
                     ul(class="nav navbar-nav")
-                        li #[a(href="/") Home]
                         li.active #[a(href="/blog") Blog]
                         li #[a(href="http://github.com/piofthings/web") Source]
 
-
         .body-content
+            .container-flex
+                .piot-header
+                    .container
+                        h1 Blog of things
+                .navbar
+                    .div(style="border-top: solid 1px #ddd;border-bottom: solid 1px #ddd")
+                        .container
+                            .navbar-collapse
+                                ul(class="nav navbar-nav")
+                                    li #[a(href="/blog") All]
+
+
             .container
                 .row
-                    .col-sm-8.hidden-xs
+                    .col-sm-8
                         block content
-                    .col-sm-4
-                        .panel.panel-default.hidden
-                            .panel-heading
-                                .panel-title Categories
-                            .panel-body
-                                .form-input
-                                    select.form-control
-                                        each cat in getCategories()
-                                            option #[a(href=categoryURL(cat)) #{cat}]
-                        .panel.panel-default
-                            .panel-heading
-                                .panel-title Tags
-                            .panel-body
-                                ul.nav.nav-list
-                                    li.nav-header
-                                    each tag in getTags()
-                                        li
-                                            a(href=tagURL(tag)) #{tag}
+                    .col-sm-4.hidden-xs
+                        include includes/indexSidebar

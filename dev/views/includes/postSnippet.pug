@@ -4,16 +4,12 @@ div.post
             = post.title
     .row
         .col-xs-12
-            span.date Published #{post.date.getMonth()+1}-#{post.date.getDate()}-#{post.date.getFullYear()}
-    .row
-        .col-xs-12
-            span By #{post.author}
+            p
+                span.date #{post.date.getMonth()+1}-#{post.date.getDate()}-#{post.date.getFullYear()}
 
     div.post.content
         != post.preview
     div.tags
-        .row
-            each tag in post.tags
-                .col-xs-1
-                    a(href=tagUrl(tag))
-                        span.label.label-info #{tag}
+        each tag in post.tags
+            a(href=tagUrl(tag) style="margin-right: 5px")
+                span.label.label-info #{tag}

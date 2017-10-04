@@ -1,7 +1,8 @@
 extends layout
 
 block content
-  h3
-    a(href=tagUrl(tag)) posts tagged * #{tag}
+  span.h3
+    a.text-center(href=tagUrl(tag))
+     span.label.label-primary Tag archives: #{tag}
   each post in posts
     include includes/postSnippet

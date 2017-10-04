@@ -49,3 +49,4 @@ deploy/
 certs/
 connect
 webconfig.json
+.DS_Store

@@ -1,0 +1,59 @@
+.panel.panel-default.hidden
+    .panel-heading
+        .panel-title Categories
+    .panel-body
+        .form-input
+            select.form-control
+                each cat in getCategories()
+                    option #[a(href=categoryURL(cat)) #{cat}]
+
+.panel.panel-default
+    .panel-heading
+        if post
+            .panel-title Share
+        else
+            .panel-title Subscribe | Share
+
+    .panel-body
+        .row
+        if tag
+            - var tagg = tag;
+            .col-xs-4.text-center.pull-left.inline
+                a.h2(href='/rss/tag/'+tag)
+                    i.float-left(class="fa fa-rss" aria-hidden="true")
+            .col-xs-4.text-center.pull-left.inline
+                a.h2(href='https://twitter.com/intent/tweet?text=%23'+ tag +'&source=piofthings&related=piofthings&url=https://piofthings.net/tag/'+tag target="_blank")
+                    i(class="fa fa-twitter" aria-hidden="true")
+            .col-xs-4.text-center.pull-left.inline
+                a.h2(href='mailto:?subject=Pi of things : ' + tag + '&body=Pi of things - Blog : https://piofthings.net' + tagURL(tag))
+                    i(class="fa fa-envelope" aria-hidden="true")
+        else
+            if post
+                .col-xs-6.text-center
+                    div
+                        a.h2(href='https://twitter.com/intent/tweet?source=piofthings&related=piofthings&url=')
+                            i(class="fa fa-twitter" aria-hidden="true")
+                .col-xs-6.text-center
+                    div
+                        a.h2(href='mailto:?subject=Pi of things'+ '&body=Pi of things - Blog : https://piofthings.net' + post.url)
+                            i(class="fa fa-envelope" aria-hidden="true")
+            else
+                .col-xs-4.text-center.pull-left.inline
+                    a.h2(href='/rss')
+                        i.float-left(class="fa fa-rss" aria-hidden="true")
+                .col-xs-4.text-center.pull-left.inline
+                    a.h2(href='https://twitter.com/intent/tweet?source=piofthings&related=piofthings&url=https://piofthings/blog')
+                        i(class="fa fa-twitter" aria-hidden="true")
+                .col-xs-4.text-center.pull-left.inline
+                    a.h2(href='mailto:?subject=Pi of things'+ '&body=Pi of things - Blog : https://piofthings/blog')
+                        i(class="fa fa-envelope" aria-hidden="true")
+
+.panel.panel-default
+    .panel-heading
+        .panel-title Tags
+    .panel-body
+        ul.nav.nav-list
+            li.nav-header
+            each tag in getTags()
+                li
+                    a(href=tagURL(tag)) #{tag}
