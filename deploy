@@ -8,5 +8,8 @@ mkdir $1
 cp dev/*.* $1
 cp -r dev/node_modules/ $1/node_modules/
 cp -r dev/www/ $1/www/
+cp -r dev/views/ $1/views/
+cp -r dev/_blog/ $1/_blog/
+
 cp -r dev/server/ $1/server/
 rm -rf $1/*.ts
