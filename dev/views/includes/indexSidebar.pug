@@ -22,7 +22,7 @@
                 a.h2(href='/rss/tag/'+tag)
                     i.float-left(class="fa fa-rss" aria-hidden="true")
             .col-xs-4.text-center.pull-left.inline
-                a.h2(href='https://twitter.com/intent/tweet?text=%23'+ tag +'&source=piofthings&related=piofthings&url=https://piofthings.net/tag/'+tag target="_blank")
+                a.h2(target="_blank" href='https://twitter.com/intent/tweet?text=%23'+ tag +'&source=piofthings&related=piofthings&url=https://piofthings.net/tag/'+tag)
                     i(class="fa fa-twitter" aria-hidden="true")
             .col-xs-4.text-center.pull-left.inline
                 a.h2(href='mailto:?subject=Pi of things : ' + tag + '&body=Pi of things - Blog : https://piofthings.net' + tagURL(tag))
@@ -31,7 +31,7 @@
             if post
                 .col-xs-6.text-center
                     div
-                        a.h2(href='https://twitter.com/intent/tweet?source=piofthings&related=piofthings&url=')
+                        a.h2(target="_blank" href='https://twitter.com/intent/tweet?source=piofthings&related=piofthings&url=https://piofthings.net' + post.url + '&text=' + post.title)
                             i(class="fa fa-twitter" aria-hidden="true")
                 .col-xs-6.text-center
                     div
@@ -42,7 +42,7 @@
                     a.h2(href='/rss')
                         i.float-left(class="fa fa-rss" aria-hidden="true")
                 .col-xs-4.text-center.pull-left.inline
-                    a.h2(href='https://twitter.com/intent/tweet?source=piofthings&related=piofthings&url=https://piofthings/blog')
+                    a.h2(target="_blank" href='https://twitter.com/intent/tweet?source=piofthings&related=piofthings&url=https://piofthings/blog')
                         i(class="fa fa-twitter" aria-hidden="true")
                 .col-xs-4.text-center.pull-left.inline
                     a.h2(href='mailto:?subject=Pi of things'+ '&body=Pi of things - Blog : https://piofthings/blog')
