@@ -15,6 +15,6 @@ but beautifully simple library called ```Poet```. I had to [fork it](https://git
 
 I will write more about ```Poet``` in my software oriented [blog](http://sumitmaitra.wordpress.com).  
 
-I shall keep this place solely for IoT projects, Robotics and 3D Printing related stuff only.  
+I shall keep this place solely for IoT projects, Robotics and 3D Printing related stuff.  
 
 Okay, back to work now, we have robots to build and things to automate... cheers!
