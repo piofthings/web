@@ -47,6 +47,7 @@ deploy/
 
 # Custom
 certs/
+/temp/
 connect
 webconfig.json
 .DS_Store

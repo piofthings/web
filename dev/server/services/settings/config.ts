@@ -19,6 +19,7 @@ export class Config {
             {
                 this.currentSettings.key = nconf.get('key');
                 this.currentSettings.cert = nconf.get('cert');
+                this.currentSettings.hookconfig = nconf.get('hookconfig');
                 if(callback!=null)
                 {
                     callback(this.currentSettings);
