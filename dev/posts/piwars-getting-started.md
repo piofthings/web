@@ -25,7 +25,7 @@ We are planning to build our robot using a RaspberryPi 3 and a ThunderBorg motor
 
 The chassis will be custom designed and 3D Printed. At the end of the challenge we'll make all our designs open source for everyone to view/share/improve. We have a rough sketch of how it will support front-wheel-steering. This, we hope, will give a bit of uniqueness to the drive system of an otherwise standard four-wheeled robot.
 
-The bot will be equipped with four (or more) Ultrasonic sensors for distance sensing to help it navigate the Speed challenge and the Maze challenge. We've looked up past challenges and found managing timing for Ultrasonic sensors in software is tricky so we are planning to use dedicated hardware to capture the sensor data and pass it on to the Pi. Looking around, we found an Arduino powered project that does 360 degree coverage using 8 sensors. However the [UltraBorg by PiBorg](https://piborg.org/UltraBorg) supports 4 HC-SR04 sensors plus 4 servos with independent power supply. It is an I2C board that supports daisy chaining so if we found need for more than 4 sensors we could get two of them working in tandem. The additional support for servos will come in handy for the steering and an attachment we have in mind for the 'Over the moon' challenge.
+The bot will be equipped with four (or more) Ultrasonic sensors for distance sensing to help it navigate the Speed challenge and the Maze challenge. We've looked up past challenges and found managing timing for Ultrasonic sensors in software is tricky so we are planning to use dedicated hardware to capture the sensor data and pass it on to the Pi. Looking around, we found an Arduino powered project that does 360 degree coverage using 8 sensors. However the [UltraBorg by PiBorg](https://piborg.org/UltraBorg) supports four HC-SR04 sensors plus four servos with independent power supply. It is an I2C board that supports daisy chaining so if we found need for more than four sensors we could get two of them working in tandem. The additional support for servos will come in handy for the steering and an attachment we have in mind for the 'Over the moon' challenge.
 
 For the speed challenge, previously, a wall-hugging algorithm looking at only the left or the right wall was enough to keep it straight. Introducing the narrowing of track, steps up the challenge and we hope to be able to use distance on both sides combined with the steering capability to keep us centered.
 
@@ -52,7 +52,7 @@ Will the additional details ensure selection, NOPE!
 
 Remember, the organisers have an un-enviable and fairly subjective task of picking teams from the hundreds of applications. If you don't make it, don't despair, continue with your experimenting and learning. Talk about what you learn and where you get stuck, share it with people via, blogs, talks and workshops. Remember, PiWars is more about community and education and not to do with cut-throat multi-million pounds professional competition (I can hear some of you ;-)...)!
 
-Go to the actual event anyway, it should be a lot of fun. You can get spectator tickets here.
+Go to the actual event anyway, it should be a lot of fun. You can get spectator tickets [here](https://ti.to/cambridge-raspberry-jam/pi-wars-2018-spectators).
 
 ## On to robot-making
 
