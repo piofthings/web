@@ -35,7 +35,7 @@ For 'Over the moon' challenge we will need at-least one camera. We plan to mount
 
 If we gain enough OpenCV experience we may use the camera as a backup for centering in the line challenge as well.
 
-The Duck shoot challenge seems very interesting given the complexity of building a projectile launcher. We haven't thought this through yet, but we saw David Pride's nerf dart launcher and we do have a Nerf gun that can be sacrificed. We will probably follow David's lead for this one.
+The Duck shoot challenge seems very interesting given the complexity of building a projectile launcher. We haven't thought this through yet, but we saw <a "Nerf Tank by David Pride" rel="nofollow" href="https://www.raspberrypi.org/blog/nerf-gun-tank-fred-209/">David Pride's</a> nerf dart launcher and we do have a Nerf gun that can be sacrificed. We will probably follow David's lead for this one.
 
 Tada!
 
@@ -131,7 +131,7 @@ Unfortunately, I didn't have the steering servo while doing the design bits, so 
 
 Until such time here are a few random images of our progress.
 
-P.S. If you are a part of PiWars then you should probably join the <a href="https://discord.gg/9Hfjbu4">Discord group</a> run by Tom Oinn. It has an enthusiastic bunch on Roboteers who have either participated in a Piwars before or are signing up this year. It is a very nice place to ask any question.
+P.S. If you are a part of PiWars then you should probably join the <a href="https://discord.gg/9Hfjbu4">Discord group</a> run by Tom Oinn. It has an enthusiastic bunch on roboteers who have either participated in a PiWars before or are signing up this year. It is a very nice place to ask any question.
 
 
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
