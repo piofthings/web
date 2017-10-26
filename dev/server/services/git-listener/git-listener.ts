@@ -26,7 +26,7 @@ export class GitListener extends EventEmitter {
 
     private reply = (statusCode: number, res: express.Response) => {
 
-        let message = Http.STATUS_CODES[statusCode].toLowerCase() + "Yada Yada Yada";
+        let message = Http.STATUS_CODES[statusCode].toLowerCase() + " Yada Yada Yada";
 
         var headers = {
             'Content-Type': 'application/json',
