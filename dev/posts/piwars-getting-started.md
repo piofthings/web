@@ -119,13 +119,13 @@ That's about all the bits I have designed so far. Apart from the issue with the 
 Next step was to test if the UltraBorg and the ThunderBorg would play nice with each other. Both being I2C devices I did not anticipate any trouble and turns out, after you have read through the documentation of the <a title="Getting started with UltraBorg" rel="nofollow" href="https://www.piborg.org/blog/ultraborg-getting-started">UltraBorg</a> and <a title="Gettig started with ThunderBorg" rel="nofollow" href="https://www.piborg.org/blog/build/thunderborg-build/thunderborg-getting-started">ThunderBorg</a>, it is no trouble at all. Look for their daisy-chaining diagrams with the colour coded pin markings. If things don't work at first, wiggle the wires.
 Here is what my wiring looks like.  
 
-<img title="UltraBorg and ThunderBorg daisy chained" src="/posts/images/pi-wars/pi-o-steer-ultraborg-thunderborg-daisychaining.jpg" />  
+<img style="max-width: 100%" title="UltraBorg and ThunderBorg daisy chained" src="/posts/images/pi-wars/pi-o-steer-ultraborg-thunderborg-daisychaining.jpg" />  
 
 During the first test, I was powering the UltraBorg from the Pi itself because it was only using the HC-SR04 sensors. However if you want to test with Motors, _take out the jumper on the UltraBorg_ and power it from a separate power source. I am still undecided if I should use a separate Lithium Ion + Adafruit Powerboost combination or tap from the 12V output of the ThunderBorg and use a Hobbywing UBEC. More about that in the next post.  
 
 Once tested, I bolted the joiner to the top of the chassis and put the Bot together.
 
-<img title="Pi-o-steer - Now who's a pretty robot!" src="/posts/images/pi-wars/pi-o-steer-both-stage-1.jpg" />  
+<img style="max-width: 100%" title="Pi-o-steer - Now who's a pretty robot!" src="/posts/images/pi-wars/pi-o-steer-both-stage-1.jpg" />  
 
 Unfortunately, I didn't have the steering servo while doing the design bits, so up until this point, I had 3 Ultrasonic sensor readings, 4 controllable motors tied to a motor controller, all tied to a Pi but no steering. I am currently working on the steering motor mount. Once it is ready, I will start with a Rock Candy controller. I will probably have a XBox controller in the standby too. That's when the fun will actually start. Hopefully an update in another couple of weeks! Till then keep robot hacking!
 
