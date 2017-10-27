@@ -61,7 +61,7 @@ With the application out of the way, and having decided the only way was forward
 ### The chassis
 With the MonsterBorg delivered, our primary motors and motor drivers were pre-decided. The MonsterBorg is a monster all-right. You cannot use its super neat aluminum chassis along with the default tires. The resulting bot is wider than the allowed width of a A4 size paper. So step 1 was to build a custom chassis.  
 
-#### Tinkercad to the rescue   
+#### Using Tinkercad   
 [Tinkercad](https://www.Tinkercad.com) is a really neat online/web-based 3D Design tool. It is super easy to get started, just follow their online Tutorials for an hour or so and you are off.
 
 I faced a problem with Tinkercad straight off the bat. The default build plate on Tinkercad isn't big enough to support the A4 size robot. Neither was my 3d Printer. With a 190mm square usable build plate the best I could hope was a two piece chassis.
