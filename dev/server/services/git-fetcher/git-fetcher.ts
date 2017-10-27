@@ -23,7 +23,7 @@ export class GitFetcher {
             for (let i = 0; i < this.hookConfig.actions.length; i++) {
                 let repoConfig = this.hookConfig.actions[i];
                 if (repoConfig.eventName == event) {
-                    this.fetchFromGitHub(this.hookConfig.accessToken, data.repository.full_name, repoConfig.branch, repoConfig.fetchPath, (buffer: any) => {
+                    this.fetchFromGitHub(this.hookConfig.accessToken, data.repository.full_name, repoConfig, (buffer: any) => {
                         console.log("Action complete for Event:" + event);
                     });
                 }
@@ -37,16 +37,15 @@ export class GitFetcher {
 
     public fetchFromGitHub = (gitHubAccessToken: string,
         repoFullName: string,
-        branchName: string,
-        filePath: string,
+        repoConfig: RepoConfig,
         callback: any) => {
 
         let client = octonode.client(gitHubAccessToken);
         if (client != null) {
             this.repo = client.repo(repoFullName);
-            console.log("Trying to get: " + repoFullName + "@filePath: " + filePath);
+            console.log("Trying to get: " + repoFullName + " @filePath: " + repoConfig.fetchPath);
             try {
-                this.getFolder(filePath, () => {
+                this.getFolder(repoConfig.fetchPath, repoConfig, () => {
 
                 });
             }
@@ -56,7 +55,8 @@ export class GitFetcher {
         }
     }
 
-    private getFolder = (filePath: string, callback: any) => {
+    private getFolder = (filePath: string, repoConfig: RepoConfig, callback: any) => {
+
         this.repo.contents(filePath, "", (err: any, result: Array<any>) => {
             if (err) {
                 console.log("ERROR:" + err.message);
@@ -69,12 +69,16 @@ export class GitFetcher {
                     for (let i = 0; i < result.length; i++) {
                         let file = result[i];
                         if (file.type == "file") {
-                            this.saveFile(file);
+                            this.saveFile(file, repoConfig);
                         }
                         else {
                             if (file.type == "dir") {
-                                this.ensureExists(this.hookConfig.actions[0].basePath + filePath + "/" + file.name, 511, () => {
-                                    this.getFolder(filePath + "/" + file.name, callback);
+                                let targetPath = file.path.replace(repoConfig.fetchPath, repoConfig.basePath)
+                                //let targetPath = require('path').dirname(targetFile);
+                                console.log(`Target Folder: ${targetPath}`);
+
+                                this.ensureExists(targetPath, 511, repoConfig, () => {
+                                    this.getFolder(file.path, repoConfig, callback);
                                 });
                             }
                         }
@@ -89,14 +93,15 @@ export class GitFetcher {
         });
     }
 
-    private saveFile = (file: any) => {
-        console.log("File:" + file.name);
+    private saveFile = (file: any, repoConfig: RepoConfig) => {
         let request = https.get(file.download_url, (response: any) => {
             try {
-                let dir = require('path').dirname(file.path);
-                this.ensureExists(this.hookConfig.actions[0].basePath + dir, 511, () => {
-                    console.log(JSON.stringify(file, null, 2));
-                    let newFile = fs.createWriteStream(this.hookConfig.actions[0].basePath + file.path);
+                console.log(file.path);
+                let targetFile = file.path.replace(repoConfig.fetchPath, repoConfig.basePath)
+                let targetPath = require('path').dirname(targetFile);
+                console.log(`File: ${file.name} at ${targetFile}`);
+                this.ensureExists(targetPath, 511, repoConfig, () => {
+                    let newFile = fs.createWriteStream(targetFile);
                     response.pipe(newFile);
                 });
             }
@@ -106,7 +111,7 @@ export class GitFetcher {
         });
     }
 
-    private ensureExists = (path: string, mask: number, cb: any) => {
+    private ensureExists = (path: string, mask: number, repoConfig:RepoConfig, cb: any) => {
         if (typeof mask == 'function') { // allow the `mask` parameter to be optional
             cb = mask;
             mask = 511;
@@ -117,14 +122,14 @@ export class GitFetcher {
         ).filter(
             p => p != '.' // Skip root path indicator (.)
             ).reduce((memo, item) => {
-                console.log("Reduce: memo:" + memo + " item: " + item);
+                //console.log("Reduce: memo:" + memo + " item: " + item);
                 // Previous item prepended to each item so we preserve realpaths
                 const prevItem = memo.length > 0 ? memo[memo.length - 1] + "/" : '';
 
                 controlledPaths.push(prevItem + item);
                 return [...memo, prevItem + item];
             }, []).map(dir => {
-                console.log("MAP: " + dir);
+                //console.log("MAP: " + dir);
                 try {
                     fs.mkdirSync(dir);
                 }
@@ -134,11 +139,11 @@ export class GitFetcher {
                         console.error(error);
                         throw error;
                     }
-                    console.error(error);
+                    //console.error("Exists: Skipped");
                 }
                 controlledPaths.splice(controlledPaths.indexOf(dir), 1)
                 if (controlledPaths.length == 0) {
-                    console.log("Calling back");
+                    //console.log("Calling back");
                     return cb();
                 }
             });
