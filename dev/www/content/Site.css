@@ -7,6 +7,9 @@ body {
     padding-bottom: 20px;
 }
 
+img {
+    max-width: 100%;
+}
 /* Set padding to keep content from hitting the edges */
 .body-content {
 
