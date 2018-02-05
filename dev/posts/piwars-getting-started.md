@@ -192,7 +192,7 @@ P.S. If you are a part of PiWars then you should probably join the <a href="http
     <span class="sr-only">Previous</span>
   </a>
   <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right fa fa-chevron-left" aria-hidden="true"></span>
+    <span class="glyphicon glyphicon-chevron-right fa fa-chevron-right" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
 </div>
