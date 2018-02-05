@@ -45,7 +45,7 @@ export class web {
                         //let posts = poet.helper.getPosts(0, 5);
 
                     }).init((err: any, cb: any) => {
-                        console.log("Err: " + JSON.stringify(err));
+                        console.error(err);
                     })
                         .then(
                         (data: any, cb: any) => {
