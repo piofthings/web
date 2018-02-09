@@ -2,7 +2,7 @@
     "title": "Putting together a digital photo frame using a Raspberry Pi",
     "tags": ["RaspberryPi", "3D Printing"],
     "category": "Projects",
-    "date": "12-1-2018",
+    "date": "01-12-2018",
     "author": "Sumit Maitra"
 }}}
 
@@ -53,7 +53,7 @@ For the top-frame I designed a nice overlap so I had enough surface to apply the
 
 For the bottom bit, I cut it straight but kept it un-equal so the join wouldn't be down the middle for both the pieces. For some reason I concluded it wouldn't look good or be not strong enough. Both were pretty unfounded I think.
 
-**Assembling the components**<br>
+**Assembling the components**  
 As seen from the hardware list above I had plans to power the project via a wall wart as well as battery, hence the PowerBoost 1000C. The PowerBoost was supposed to be at the left bottom corner and the RaspberryPi is planned to be on the right. In middle was space for the OnOff button shim and a 1200 mAh LiPo pack.
 
 Since I yanked the PowerBoost and the LiPo at the last moment, the OnOff button shim's input moved had to be moved to where the PowerBoost originally was. Also the on off shim doesn't have and screw holes. I worked around by pinning it on a slightly bigger piece of Proto board and bolting the ProtoBoard to the chassis.
@@ -102,6 +102,10 @@ Tapping on the screen bring up the navigation arrows and the top navigation bar.
 ### Next steps
 
 Currently I don't have a release plan or for it and Electron doesn't seem to have the integrated updater for Linux. Once I've sorted it out I'll start releasing packages and installers on all platforms Electron supports. Till then feel free to clone and run.
+
+## Special mention
+Many thanks to [Phil Howard](https://twitter.com/gadgetoid) aka @Gadgetoid of PiMoroni whose prompt answers on OnOffShim helped me ship this off with my parents on time. Phil runs [pinout.xyz](http://pinout.xyz) - the definitive reference of RaspberryPi HATs and pHATs GPIO pin compatibility with the Pi. Phil has a [Patreon page](https://patreon.com/gadgetoid), go support him if you can!
+
 
 Here are a few images that show the making of the photo-frame (that's a carousel you can click left or right).
 

@@ -1,6 +1,6 @@
 {{{
   "title": "Getting started with PiWars!",
-  "tags": ["piwars","robotics"],
+  "tags": ["piwars","robotics", "RaspberryPi"],
   "category": "Robotics",
   "date": "10-26-2017",
   "author": "Sumit Maitra"
