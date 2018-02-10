@@ -26,6 +26,7 @@
     "express": "^4.14.0",
     "express-session": "^1.14.1",
     "http": "0.0.0",
+    "marked": "^0.3.12",
     "morgan": "^1.7.0",
     "multer": "^1.2.0",
     "nconf": "^0.8.4",
