@@ -72,15 +72,21 @@ export class web {
                         // Only get the latest posts
                         var posts = poet.helpers.getPosts(0, 20);
                         res.setHeader('Content-Type', 'application/rss+xml');
-                        res.render('rss', { posts: posts });
+                        res.render('rss', {
+                            posts: posts,
+                            tag: '',
+                            tagUrl: ''
+                        });
                     });
 
                     poet.addRoute('/rss/tag/:bytag', (req: any, res: any) => {
+                        res.setHeader('Content-Type', 'application/rss+xml');
                         var tagPosts = poet.helpers.postsWithTag(req.params.bytag);
                         if (tagPosts.length) {
                             res.render('rss', {
                                 posts: tagPosts,
-                                tag: req.params.bytag
+                                tag: req.params.bytag,
+                                tagUrl : '/tag/' + req.params.bytag
                             });
                         }
                     });
