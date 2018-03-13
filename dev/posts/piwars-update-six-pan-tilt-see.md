@@ -1,5 +1,5 @@
 {{{
-  "title": "Update 6: Pan, tilt, see... Vision challenges in progrss...",
+  "title": "Update 6: Pan, tilt, see... Vision challenges in progress...",
   "tags": ["piwars", "robotics", "raspberrypi"],
   "category": "Robotics",
   "date": "March 12, 2018",
