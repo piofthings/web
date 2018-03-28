@@ -5,7 +5,7 @@ div.post
     .row
         .col-xs-12
             p
-                span.date #{post.date.getMonth()+1}-#{post.date.getDate()}-#{post.date.getFullYear()}
+                span.date.h4 #{post.date.getFullYear()}-#{post.date.getMonth()+1}-#{post.date.getDate()}
 
     div.post.content
         != post.preview
