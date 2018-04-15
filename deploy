@@ -16,3 +16,5 @@ cp -r dev/posts/ $1/posts/
 
 cp -r dev/server/ $1/server/
 rm -rf $1/*.ts
+
+cp webconfig.json $1
