@@ -16,6 +16,7 @@ After re-writing my control loop, it took about 30-45 minutes for me to get the 
 
 Too early to celebrate yet! I wanted to keep all software tuning for this week and wanted to focus on the construction of the robot over the weekend so I parked the code and went back to Tinkercad.
 
+Thanks to everyone in the community who egged me along 👍
 
 ## Golf grabber
 
