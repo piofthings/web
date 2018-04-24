@@ -2,7 +2,7 @@
   "title": "PiWars 2018: The Aftermath - 1",
   "tags": ["piwars", "RaspberryPi"],
   "category": "robotics",
-  "date": "April-23-2018",
+  "date": "April 24, 2018",
   "author": "Sumit Kumar Maitra"
 }}}
 
@@ -16,6 +16,7 @@ We didn't do well overall and came 10th out of 14 or 15 teams that participated 
 ![Pi-o-steer makes it to Cambridge CS labs on April 22nd](/posts/images/pi-wars/pi-o-steer-at-piwars-1.jpg)
 - The chassis bed is good and firm, with some niggles around the canopy and battery holder.
 - The motor brackets were good and solid, survived quite a bit of thrashing during the competition.
+- The Ackerman steering - Didn't imagine it was going to be trouble free but it surprising was. It didn't fall off, didn't mis-behave, and helped steer Pi-o-steer to a 10.26 seconds time in straight line speed.
 - The Thunderborg controller for powering the Pi and controlling the motors was an absolute joy. There is a minor flip side with non I2C device integration but I'll get to that in a bit. However key things to note about Thunderborg are
     - Along with the Lid/Plate you get a functional On/Off switch that phsically disconnects your Pi from whatever you are powering the Thunderborg with. It is a life saver. No, and I repeat, no hardware was burnt during the making of Pi-o-steer.
     - Thunderborg manages Power to the Pi and Motors very nicely. I didn't have any issues with the controller or other components going quirky due to power fluctuations.
@@ -23,7 +24,8 @@ We didn't do well overall and came 10th out of 14 or 15 teams that participated 
     - It communicates with the Pi over I2C bus and the address is programmable so you can dasiy chain multiple Thunderborgs together.
 - Ultraborg is super versatile for controlling Servos and the API is perfectly adequate. I didn't get a chance to use the Ultrasonics fully. They were a bit slow when I started, but I think I just need to optimise my code better to make full use of the board.
 - The Pixy Cam worked brilliantly for straight line speed. We were a little lucky about the afternoon time slot for straight line speed. The speed we got was more to do with inefficient code than hardware.
-- The HobbyWing UBEC was predictable and powered the Ultraborg with a steady 6V.
+- The HobbyWing UBEC was predictable and powered the Ultraborg with a steady 6V when powered via the batteries.
+- 18650 Batteries are bulky workhorses. I was looking for less 'explody' batteries and turns out 18650s are the batteries used in Teslas (and vaping machines O_o). They didn't need a complicated charger setup and provided upto 20amps of current if required. They were the powerhouse for the big and chunky Pi-o-steer. I had carried four sets with me, but I needed only two.
 
 ### The challenges
 #### Straight line speed
@@ -63,3 +65,5 @@ You can guess why we were in 10th place because we are already in the "what went
 Apart from the build, there was a ton wrong with my approach towards building the Robot. I'll do a separate post on those learnings.
 
 For now, its time to catch up with two weeks of sleep-deprivation and start planning for 2019 ;-).
+
+![Pi-o-steer - A reminder for next Year](/posts/images/pi-wars/pi-o-steer-10th.jpg)
