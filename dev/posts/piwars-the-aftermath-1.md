@@ -26,6 +26,9 @@ We didn't do well overall and came 10th out of 14 or 15 teams that participated 
 - The Pixy Cam worked brilliantly for straight line speed. We were a little lucky about the afternoon time slot for straight line speed. The speed we got was more to do with inefficient code than hardware.
 - The HobbyWing UBEC was predictable and powered the Ultraborg with a steady 6V when powered via the batteries.
 - 18650 Batteries are bulky workhorses. I was looking for less 'explody' batteries and turns out 18650s are the batteries used in Teslas (and vaping machines O_o). They didn't need a complicated charger setup and provided upto 20amps of current if required. They were the powerhouse for the big and chunky Pi-o-steer. I had carried four sets with me, but I needed only two.
+_[Updated: April 25, 2018]_
+- The Controller: I used a Rock Candy Controller and did not have any issues. The one rule of thumb I used was to make sure the Controller was paired with the controller in the team room itself which is much less crowded as far as WiFi bands are concerned. Secondly if you see issues with connectivity, swap the controller batteries for fresh/freshly charged ones. David pride won the intermediates section with Rock Candy Controller, so they worked for me. I might try an XBox One controller next time!
+_[End update]_
 
 ### The challenges
 #### Straight line speed
