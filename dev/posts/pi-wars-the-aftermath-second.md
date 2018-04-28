@@ -9,6 +9,7 @@
 In the last post I wrote what went right and wrong with the build. However, build is only a small part of the event preparation. Attending PiWars is a full scale project. To be successful you need to manage your team's time well and split the work up correctly for things to line up correctly for success. Work needs to be split up into Software, Hardware, Design, Fabrication and Integration.
 If you think you are a one member 'team' well, you have to do all those tasks, so first thing to do is sit down and break it down into those buckets. If you try to do everything without a master list you will forget about critical things and remember them when it is too late to react.
 
+## Lessons learnt
 - Design challenges
     - I had a working chassis in December, but did not sit down to design it to completion, so that I could at-least estimate how much time it would take to fabricate, fit and finish.
     - Once you have a chassis, you should work on the challenges and label your code as you go. Save every change in source control so it is easy to roll back.
@@ -22,11 +23,20 @@ If you think you are a one member 'team' well, you have to do all those tasks, s
     - Decide on your electronics by December, latest January and keep the h/w handy and ready. Make sure you think through how different bits of hardware will integrate and make sure it is possible without breaking the Pi.
 
 - Setting expectations for challenges
-    - We all want to win and win big. That's a good place to start. However once you start working on code for the challenges you'll realise you may/maynot be equipped to smash the opposition out of the park. Time to start thinking smart
+    - We all want to win and win big. That's a good place to start. However once you start working on code for the challenges you'll realise you may/maynot be equipped to smash the opposition out of the park. Time to start thinking smart.
     - See which challenges offer most points and how. Attempt the ones that get you into points easily, first.
         - If there are two modes, one with less point and one with more, make sure you can do the one with less points without fail. Example duck shoot had two options, shoot soft projectiles or roll a ball. Make sure you can roll the ball accurately before you takedown a Nerf gun!
 
     - Straight line speed is much easier to conquer if you decide to do it cleanly first. Go for speed next. And before you go for speed, don't forget to commit your code to source control.
+
+    - _Updated April 26, 2018_  
+    <blockquote class="twitter-tweet" data-lang="en-gb"><p lang="en" dir="ltr">And test in different lighting conditions.</p>&mdash; Cathy O&#39;Malley (@spud01au) <a href="https://twitter.com/spud01au/status/989304009625292800?ref_src=twsrc%5Etfw">26 April 2018</a></blockquote>
+
+        -  Cathy O'Malley on twitter pointed out quite correctly that one needs to be on top of the Lighting conditions as well in the Vision based challenges. Computer vision is notoriously fickle and easily affected by bright lights. Do as much as you can to prepare for varying light conditions. This includes testing in daylight and night time.
+
+        - Another thing I did was create course replicas. I did the straight line speed and the SOTR. I am now going to setup the Minimal Maze as well to finalize and complete that challenge (yeah yeah... late so what!).
+
+    _End Update_
 
 - Practice practice practice
     - Last 2 year's winner and this year's runner up Brian Corteil has a very nice [video on how to approach PiWars](https://www.youtube.com/watch?v=24GbJCq19V8), watch it multiple times and absorb everything he's saying. Key bit is what I said above, get a working chassis fast and drive it a a lot.
