@@ -104,7 +104,7 @@ Tapping on the screen bring up the navigation arrows and the top navigation bar.
 Currently I don't have a release plan or for it and Electron doesn't seem to have the integrated updater for Linux. Once I've sorted it out I'll start releasing packages and installers on all platforms Electron supports. Till then feel free to clone and run.
 
 ## Special mention
-Many thanks to [Phil Howard](https://twitter.com/gadgetoid) aka @Gadgetoid of PiMoroni whose prompt answers on OnOffShim helped me ship this off with my parents on time. Phil runs [pinout.xyz](http://pinout.xyz) - the definitive reference of RaspberryPi HATs and pHATs GPIO pin compatibility with the Pi. Phil has a [Patreon page](https://patreon.com/gadgetoid), go support him if you can!
+Many thanks to [Phil Howard](https://twitter.com/gadgetoid) aka @Gadgetoid of Pimoroni whose prompt answers on OnOffShim helped me ship this off with my parents on time. Phil runs [pinout.xyz](http://pinout.xyz) - the definitive reference of RaspberryPi HATs and pHATs GPIO pin compatibility with the Pi. Phil has a [Patreon page](https://patreon.com/gadgetoid), go support him if you can!
 
 
 Here are a few images that show the making of the photo-frame (that's a carousel you can click left or right).
@@ -144,9 +144,9 @@ Here are a few images that show the making of the photo-frame (that's a carousel
      </div>
     </div>
     <div class="item ">
-     <img alt="Removed Powerboost and retrofitted the PiMoroni OnOff Shim in placed" src="/posts/images/pi-photo-frame/carousel-5-final-power-in.jpg" />
+     <img alt="Removed Powerboost and retrofitted the Pimoroni OnOff Shim in placed" src="/posts/images/pi-photo-frame/carousel-5-final-power-in.jpg" />
      <div class="carousel-caption">
-      Removed Powerboost and retrofitted the PiMoroni OnOff Shim in placed
+      Removed Powerboost and retrofitted the Pimoroni OnOff Shim in placed
      </div>
     </div>
     <div class="item ">
