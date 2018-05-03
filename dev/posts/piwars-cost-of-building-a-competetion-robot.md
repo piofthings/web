@@ -6,7 +6,7 @@
   "author": "Sumit Kumar Maitra"
 }}}
 
-This maybe a controversial topic and I fully expect to get panned for it, however, I thought I should write down what I spent on my PiWars bot for two reasons:
+This maybe a controversial topic and I fully expect to get panned for it, however, I thought I should write down what I spent on my PiWars bot (First time and in the Beginners category) for two reasons:
 1. Improve on the costs in future (i.e. spend less money)
 2. Give others a heads up
 
@@ -21,21 +21,76 @@ Before we start, I'll assume you have a Monitor, a wireless Keyboard (bluetooth 
 ## Building a competition robot using Tiny 4WD
 A year and half ago Brian Coretil wrote an excellent two part article in the MagPi ([Issue 51](https://www.raspberrypi.org/magpi/robot-magpi-51/) and [Issue 52](https://www.raspberrypi.org/magpi/robot-magpi-52/)) on how to build a small robot that could arguably compete well in PiWars. This became the first kit "Tiny 4WD" his company Coretec Robotics started selling. I have built a couple of 'bootlegged' versions of this robot and they are excellent little bots.
 
-### Cost of Tiny W4D
+### Cost of Tiny W4D based robot
 Tiny kit costs £55/- from Pimoroni and comes with laser cut acrylic chassis + camera holder + Explorer pHAT Motor Controller + Micro metal motors + Moon Buggy Wheels + nut/bolts/spacers.
 
 You'll need to add a Pi, a battery pack and to do vision challenges a Pi Camera with cable. To do Vision challenges I recommend you get a Pi 3 B+. You'll find the Pi Zero struggling to keep up.
 
-So cost of the bot (assuming a Pi3 and official Pi Camera and a 16Gb MicroSD Card) is 55 + 32.8 + 24  + 9 = £106/-.
-A 3000 mAH Lithium Ion battery pack from Pimoroni + a Adafruit PowerBoost 1000 charger would be another
-A 2000 - 2500 mAH battery pack = about 10/-
+So cost of the bot (assuming a Pi3 and official Pi Camera and a 16Gb MicroSD Card) can be split up as follows:
+<table class="table table-striped">
+<thead>
+<tr>
+<th></th>
+<th>Item</th>
+<th>Qty.</th>
+<th>Each</th>
+<th>Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.</td>
+<td>Tiny 4WD Kit</td>
+<td>1</td>
+<td>1</td>
+<td>£55.00</td>
+</tr>
+<tr>
+<td>2.</td>
+<td>RaspberryPi 3</td>
+<td>1</td>
+<td>1</td>
+<td>£32.00</td>
+</tr>
+<tr>
+<td>3.</td>
+<td>SD Card 16Gb</td>
+<td>1</td>
+<td>1</td>
+<td>£ 9.00</td>
+</tr>
+<tr>
+<td>4.</td>
+<td>Pi Camera</td>
+<td>1</td>
+<td>1</td>
+<td>£24.00</td>
+</tr>
+<tr>
+<td>5.</td>
+<td>2000 mAH battery pack</td>
+<td>1</td>
+<td>1</td>
+<td>~£15.00</td>
+</tr>
+<tr>
+<td></td>
+<td>Total</td>
+<td></td>
+<td></td>
+<td>~£135.00</td>
+</tr>
+</tbody>
+</table>
 
 You can play around with the costs by going for an aftermarket Camera from Ebay that starts at about 6 quids.
 
-If you have a LiPo charger you can just go with the LiPo Shim only.
+If you have a LiPo charger you can just go with the [LiPo Shim (£10.00)](https://shop.pimoroni.com/products/lipo-shim) + (upto) 6000mAh LiIon battery ([like one of these from Pimoroni](https://shop.pimoroni.com/products/lithium-ion-battery-pack)) only.
+
+
 
 #### Optional components
-- Controller/Joystick. If you had a Wii-mote, a Sony PS3/4, or XBox One controller you don't need to buy one, you can easily use one of those as your Controller. You could also use your keyboard, I've seen people use the small bluetooth enable media center keyboards for controlling the robot.
+- Controller/Joystick. If you had a Wii-mote, a Sony PS3/4, or XBox One controller you don't need to buy one, you can easily use one of those as your Controller. You could also use your keyboard, I've seen people use the small bluetooth enable media center keyboards for controlling the robot.  
 I used the Rock Candy PS3 controller clone. It uses a dongle so takes up a USB port but works fine once you have paired it.
 
 - Additional Servo(s): This year you could build a passive golf grabber that is basically a U shaped clamp that guides the ball forward. However you might want to use a servo to close a 'gate' once the ball is in, so that you don't loose it till the end.
@@ -144,3 +199,15 @@ The biggest investment for PiWars is not listed above, it is your time, the cost
 However, there is a very definite material cost involved in building a robust competition Robot. I have tried to show you the mid-lower limit and the mid-upper limits :-). Hopefully you will be able to find a sweet spot for yourself. You can spend a lot more money by building custom PCBs, custom Nerf guns, even custom controller boards OR spend much lower by going with one of the smaller than Tiny 4WD kits as listed on the [PiWars site](https://piwars.org/getting-started-with-robotics/).
 
 Happy Robotting 🤖 !
+
+## Updates May 3, 2018
+The post has been generally well received and I got some feedback on Twitter, so I thought I would update it.
+
+**[Neal Oldmeadow on Twitter](https://twitter.com/neal_oldmeadow/status/991633047035568128)**   
+Neal reported back saying this Tiny4WD based robot costed around £170/-. That's a validation of my Tiny4WD based estimation earlier in the article. Neal came 4th in the beginner's category.
+
+**[Dr. Emma Norling and Tom Onin on Twitter](https://twitter.com/CompSciEmma/status/991629281318010880)**  
+Dr. Norling and Tom (both PiWars veterans) pointed out that a lot of the cost may come out of your Maker toolkit you already have (or will go into your Maker toolbox that you will hopefully use for years in the future). Also, opposed to building your first robot from scratch, if you are a repeat participant, you can expect a lot of components from previous robot still useful.
+
+**[Douglas Gore on Twitter](https://twitter.com/DougGore/status/991642901217234944)**  
+Doug pointed out I had not clarified the "Poster Roll" line item and arena building costs. This is true. To be well prepared, it is ideal if you prepare arenas for the automated challenges because they are well documented with exact measurements. Testing the bot in simulated conditions gives you a better chance of success on the day. Me (and Doug) both used cardboard packing boxes, black poster paper and white glue to create makeshift track for straight line speed and Somewhere over the rainbow.  I didn't get time to replicate the Minimal Maze. Quite a few people built the entire rigs out of Wood and then paint. If you go down the timber and paint route that will add more to costs and effort.
