@@ -60,6 +60,43 @@ textarea {
   border-bottom: solid 1px #275da1;
 }
 
+.piot-gallery-thumb{
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 150px;
+    background-color: #F3F3F3;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #D2D2D2;
+
+}
+
+.piot-gallery-col{
+    padding: 5px;
+    border-radius: 5px;
+    /* border: 1px solid #D2D2D2; */
+}
+
+.piot-gallery-carousel{
+    width: 100%;
+}
+
+.piot-gallery-carousel-v{
+    height: 300px;
+}
+
+.piot-gallery-carousel-v::before{
+    text-align: center;
+}
+
+.piot-carousel-text{
+    background-color: #0E0E0E;
+    padding: 10px;
+    border-radius: 3px;
+}
+
 table {
     width: 100%;
     max-width: 100%;
