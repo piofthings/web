@@ -6,7 +6,6 @@
   "author": "Sumit Kumar Maitra"
 }}}
 
-## Introduction
 I always wanted to learn OpenCV, because it was a massive step up from my Computer Graphics theory class back in the University days. Also I dream that all my the pictures I have ever taken will one day be collated, indexed and searchable with context like place, scene, people in the image so on and so forth. So learning OpenCV is the natural first step towards that (no, I will not use a my images as training material for some corporate AI engine, I wear a tin-foil-hat, sue me!). Of course everything had to run off (one or more) RaspberryPi!
 
 So finally with the deadline of PiWars 2018 gone, I decided to roll up my sleeves and start learning OpenCV. I am starting this series as someone who doesn't know any OpenCV, only familiar with Python and Linux environments. Don't really know when it will end, but hopefully it will cover doing the PiWars 2018 challenges using a camera.
