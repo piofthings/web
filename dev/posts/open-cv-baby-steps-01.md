@@ -14,6 +14,15 @@ So finally with the deadline of PiWars 2018 gone, I decided to roll up my sleeve
 
 To be fair, getting started with OpenCV used to be pretty daunting until now. Recently Ben Nuttall and Dave Hones of the RaspberryPi foundation have done something super cool, they built [PiWheels](www.piwheels.org). Basically it is a Python Wheels host for Raspberry Pi specific ARM builds of python libraries. This makes it easier to use certain libraries that don't have ARM versions hosted by PyPi. Included in this list of libraries is OpenCV with all optimisations for Raspberry Pi turned on. There is no reason to fear OpenCV installation any more!
 
+Before you start, you should try and uninstall any OpenCV packages that may have come with your distribution of Debian. Raspbian and actually comes with a version installed that's not ideal.
+
+
+```
+sudo apt-get purge libopencv*
+```
+
+Once done, install OpenCV.
+
 ```
 pip3 install opencv-python
 
@@ -36,11 +45,6 @@ You should see the latest OpenCV version which as of today is 3.4.1
 
 _Disclaimer: I am currently doing this on Rasbian Desktop in a VirtualBox VM, if anything is different on Raspbian on actual Pi I shall mention it when I hit it_
 
-Additionally I removed the Debian packages that were installed with Raspbian. I am not sure if this was a good thing or bad. I shall let you know as things progress.
-
-```
-sudo apt-get purge libopencv*
-```
 
 ## My first open CV program  
 Ideally I would like to jump into grabbing images from the camera directly but I haven't configured a camera to work with the VM yet, so maybe next time. For now, here's a static image, being loaded from disk, converted into gray scale and saved back to disk.
@@ -66,3 +70,6 @@ The goto reference for Python and OpenCV is the site by [Adrian](www.pyimagesear
 I found [pythonprogramming.net](https://pythonprogramming.net/loading-images-python-opencv-tutorial/) an easier place to start.
 
 Also don't forget the official [Open CV documentation](https://docs.opencv.org/trunk/d6/d00/tutorial_py_root.html)
+
+## Update June 12, 2018
+I figured out that if you install OpenCV using wheels you should uninstall libraries that came with the Debian installation first. So I've updated the instructions above to make it unambiguous.
