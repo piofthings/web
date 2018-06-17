@@ -1,6 +1,6 @@
 {{{
   "title": "PiWars Update One: Steering (out of) control",
-  "tags": ["piwars","robotics","RaspberryPi"],
+  "tags": ["piwars","robotics","RaspberryPi","piwars-2018"],
   "category": "Robotics",
   "date": "November 07, 2017",
   "author": "Sumit Maitra"

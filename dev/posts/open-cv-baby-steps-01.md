@@ -1,5 +1,5 @@
 {{{
-  "title": "Open CV Baby Steps - 01",
+  "title": "Open CV Baby Steps 01: Installation",
   "tags": ["OpenCV","Raspbian", "RaspberryPi"],
   "category": "Computer Vision",
   "date": "14-June-2018",

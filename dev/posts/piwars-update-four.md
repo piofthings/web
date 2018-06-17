@@ -1,6 +1,6 @@
 {{{
   "title": "Update 4: Sound, Vision and fury, stumbling along...",
-  "tags": ["piwars", "robotics", "RaspberryPi"],
+  "tags": ["piwars", "robotics", "RaspberryPi","piwars-2018"],
   "category": "RaspberryPi",
   "date": "February 25, 2018",
   "author": "Sumit Kumar Maitra"

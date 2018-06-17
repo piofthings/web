@@ -1,6 +1,6 @@
 {{{
   "title": "Update 8: Panic setting in with seven days to go!",
-  "tags": ["piwars"],
+  "tags": ["piwars","piwars-2018","piwars-2018"],
   "category": "RaspberryPi",
   "date": "April 13, 2018",
   "author": "Sumit Kumar Maitra"

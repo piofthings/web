@@ -1,6 +1,6 @@
 {{{
   "title": "Cost of building a robot for PiWars",
-  "tags": ["piwars", "RaspberryPi"],
+  "tags": ["piwars", "RaspberryPi","piwars-2018"],
   "category": "Robotics",
   "date": "April-30-2018",
   "author": "Sumit Kumar Maitra"

@@ -1,6 +1,6 @@
 {{{
   "title": "Update 3: We are going to PiWars 2018!",
-  "tags": ["piwars","robotics","RaspberryPi"],
+  "tags": ["piwars","robotics","RaspberryPi","piwars-2018"],
   "category": "Robotics",
   "date": "February 7, 2018",
   "author": "Sumit Kumar Maitra"

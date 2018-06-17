@@ -1,6 +1,6 @@
 {{{
   "title": "PiWars Update Two: Steering Geometry, say what now?",
-  "tags": ["piwars","robotics","RaspberryPi"],
+  "tags": ["piwars","robotics","RaspberryPi","piwars-2018"],
   "category": "Robotics",
   "date": "December 02, 2017",
   "author": "Sumit Maitra"

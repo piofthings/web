@@ -1,6 +1,6 @@
 {{{
   "title": "Update 6: Pan, tilt, see... Vision challenges in progress...",
-  "tags": ["piwars", "robotics", "RaspberryPi"],
+  "tags": ["piwars", "robotics", "RaspberryPi","piwars-2018"],
   "category": "Robotics",
   "date": "March 12, 2018",
   "author": "Sumit Kumar Maitra"

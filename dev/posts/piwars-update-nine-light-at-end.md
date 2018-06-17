@@ -1,6 +1,6 @@
 {{{
   "title": "Update 9: Light at the end of the tunnel...",
-  "tags": ["piwars", "RaspberryPi"],
+  "tags": ["piwars", "RaspberryPi","piwars-2018"],
   "category": "Robotics",
   "date": "April-16-2018",
   "author": "Sumit Kumar Maitra"

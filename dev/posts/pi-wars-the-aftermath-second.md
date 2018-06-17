@@ -1,6 +1,6 @@
 {{{
   "title": "PiWars 2018: The Aftermath - 2 (Lessons learnt)",
-  "tags": ["piwars", "RaspberryPi"],
+  "tags": ["piwars", "RaspberryPi","piwars-2018"],
   "category": "robotics",
   "date": "April 25, 2018",
   "author": "Sumit Kumar Maitra"

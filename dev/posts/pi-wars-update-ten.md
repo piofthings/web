@@ -1,6 +1,6 @@
 {{{
   "title": "Update 10: The day is here, but the robot isn't...",
-  "tags": ["piwars"],
+  "tags": ["piwars","piwars-2018"],
   "category": "Robotics",
   "date": "April-22-2018",
   "author": "Sumit Kumar Maitra"

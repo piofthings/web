@@ -1,6 +1,6 @@
 {{{
   "title": "Update 5: Getting started with Pixy camera",
-  "tags": ["piwars","robotics", "RaspberryPi", "Pixy"],
+  "tags": ["piwars","robotics", "RaspberryPi", "Pixy","piwars-2018"],
   "category": "Robotics",
   "date": "March 6, 2018",
   "author": "Sumit Kumar Maitra"
