@@ -2,7 +2,7 @@
   "title": "Open CV Baby steps 2: Capturing video frames",
   "tags": ["OpenCV"],
   "category": "Computer Vision",
-  "date": "17-June-2018",
+  "date": "18-June-2018",
   "author": "Sumit Kumar Maitra"
 }}}
 
