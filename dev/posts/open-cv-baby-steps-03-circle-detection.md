@@ -1,7 +1,7 @@
 {{{
   "title": "Open CV Baby steps 3: Circle detection",
-  "tags": ["OpenCV"],
-  "category": "Category",
+  "tags": ["OpenCV","Raspbian", "RaspberryPi"],
+  "category": "Computer Vision",
   "date": "19-June-2018",
   "author": "Sumit Kumar Maitra"
 }}}
