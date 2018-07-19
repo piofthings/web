@@ -166,4 +166,4 @@ You will see the red ball comes out the worst of the lot. After the intial confu
 ## Conclusion
 To wrap up, we saw how we could up with HSV threshold ranges that could help us identify colours in an image.
 
-Next challenge is to find position of objects based on the colours we just learned. So we'll grab a video feed and try to analyse position of ball at runtime based on above determined HSV values for each colour. 
+Next challenge is to find position of objects based on the colour thresholds we just identified. So we'll grab a video feed and try to analyse position of ball at runtime based on above determined HSV values for each colour. 

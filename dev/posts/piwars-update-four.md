@@ -59,7 +59,7 @@ self.teleLogger = Telemetry("telemetry", "csv").get()
 
 The use it at one place like this:
 
-```Python
+```python
 if (self.motors.speed != 0):
     self.teleLogger.info(
         '%(left)f, %(front)f, %(right)f, %(back)f, %(distanceMoved)f, %(forwardSpeed)f, %(direction)s, %(degree)f, %(ratio)f', {
