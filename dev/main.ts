@@ -29,7 +29,7 @@ export class web {
                     this.app.use(bodyParser.urlencoded({ extended: false }));
 
                     var poet = Poet(this.app, {
-                        postsPerPage: 3,
+                        postsPerPage: 6,
                         posts: __dirname + '/posts',
                         metaFormat: 'json',
                         routes: {
@@ -46,11 +46,10 @@ export class web {
 
                     }).init((err: any, cb: any) => {
                         console.error(err);
-                    })
-                        .then(
+                    }).then(
                         (data: any, cb: any) => {
                             console.log("Initialized");
-                            let posts = poet.helper.getPosts(0, 5);
+                            let posts = poet.helper.getPosts(0, 6);
                             console.log(JSON.stringify(posts, null, 1))
                         });
 
