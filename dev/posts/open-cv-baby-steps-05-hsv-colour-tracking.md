@@ -17,7 +17,7 @@ In this article we will build a small app, like last time, that loads an image t
 
 This time we'll create a proper ```class``` instead of a global function because as I figured out (the hard way), you can loose the current context or ```self``` when using callbacks in OpenCV when using global functions.
 
-We call the class ```Main``` for the lack of imagination at the moment. We then define all the parameters that we want to be adjustable. These are the input values to the ```HoughCircles``` function and HSV range values for each colour that we determined using our [previous HSV Calibrator app](/blogs/opencv-baby-steps-4-building-a-hsv-calibrator). We have four values ```red_hsv```, ```green_hsv```, ```blue_hsv```, ```yellow_hsv``` that we then add into the  ```hsv_ranges``` array. We do this so we can select which colour to target using a track bar, where the track bar position corresponds to the index of the appropriate HSV range.
+We call the class ```Main``` for the lack of imagination at the moment. We then define all the parameters that we want to be adjustable. These are the input values to the ```HoughCircles``` function and HSV range values for each colour that we determined using our [previous HSV Calibrator app](/blog/opencv-baby-steps-4-building-a-hsv-calibrator). We have four values ```red_hsv```, ```green_hsv```, ```blue_hsv```, ```yellow_hsv``` that we then add into the  ```hsv_ranges``` array. We do this so we can select which colour to target using a track bar, where the track bar position corresponds to the index of the appropriate HSV range.
 
 ```python
 class Main():
