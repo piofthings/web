@@ -72,7 +72,8 @@ sudo apt-get install libusb-1.0-0-dev ```
 - Install libboost
 
 ```bash
-sudo apt-get install libboost-all-dev   ```
+sudo apt-get install libboost-all-dev   
+```
 
 ** Build from original source (Python 2.x) **
 
@@ -81,7 +82,8 @@ These are steps I took to install it myself. However I have cloned the library t
 - Download Pixy source code
 
 ```bash
-git clone https://github.com/charmedlabs/pixy.git```
+git clone https://github.com/charmedlabs/pixy.git
+```
 
 - Build the Python module  
 
@@ -130,7 +132,8 @@ cd ~/pixypy3
 - Download Pixy source code
 
 ```bash
-git clone https://github.com/piofthings/pixy.git```
+git clone https://github.com/piofthings/pixy.git
+```
 
 - Build the Python module  
 

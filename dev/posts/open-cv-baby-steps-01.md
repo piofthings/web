@@ -17,13 +17,13 @@ To be fair, getting started with OpenCV used to be pretty daunting until now. Re
 Before you start, you should try and uninstall any OpenCV packages that may have come with your distribution of Debian. Raspbian and actually comes with a version installed that's not ideal.
 
 
-```
+```bash
 sudo apt-get purge libopencv*
 ```
 
 Once done, install OpenCV.
 
-```
+```bash
 pip3 install opencv-python
 
 pip3 install opencv-contrib-python
@@ -33,7 +33,7 @@ Done!
 
 Don't believe it, fire up Python 3 shell and run the following
 
-```
+```bash
 ~ $ python3
 >>> import cv2 as cv
 >>> print(cv.__version__)
@@ -48,7 +48,7 @@ _Disclaimer: I am currently doing this on Rasbian Desktop in a VirtualBox VM, if
 ## My first open CV program  
 Ideally I would like to jump into grabbing images from the camera directly but I haven't configured a camera to work with the VM yet, so maybe next time. For now, here's a static image, being loaded from disk, converted into gray scale and saved back to disk.
 
-```
+```python
 import cv2
 
 img = cv2.imread('/home/pi/Pictures/image1.jpg',cv2.IMREAD_GRAYSCALE)

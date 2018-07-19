@@ -22,20 +22,20 @@ We will use this image of me holding up a red ball as our input and try to detec
 ![Source Image](/posts/images/opencv/Red.jpg)
 
 - We load the image using imread
-```
+```python
 img = cv.imread('/home/pi/Pictures/Red.jpg',0)
 ```
 - We apply a blur to soften it up
-```
+```python
 img = cv.medianBlur(img,5)
 ```
 - Convert the blurred image to grayscale
-```
+```python
 cimg = cv.cvtColor(img,cv.COLOR_GRAY2BGR)
 ```
 
 - Get OpenCV to run the HoughCircles function on the grayscale image.
-```
+```python
 circles = cv.HoughCircles(img,cv.HOUGH_GRADIENT,1,20,
                             param1=50,param2=52,minRadius=1,maxRadius=150)
 ```
@@ -52,7 +52,7 @@ Parameters for the function are as follows ([copied from documentation](https://
 I played around with the ```param1``` and ```param2``` till I got the transform to detect the ball. Initially it was too sensitive and there were lots of false positives. Eventually with the values provided above I ended up with the following image. ![Hough Circle](/posts/images/opencv/opencv-hough-circle-01.jpg).
 
 As you can see I've also super imposed the detected circle in green, its center point in red and a bit of text indicating the position of the circle. We need the following code to do this:
-```
+```python
 font = cv.FONT_HERSHEY_SIMPLEX
 height, width = cimg.shape[:2]   
 for i in circles[0,:]:
@@ -68,8 +68,7 @@ cv.waitKey(0)
 cv.destroyAllWindows()
 ```
 
-
-```circles``` is populated by the Hough transform OpenCV function, containing an array of detected circles. Each circle itself is an array of the x, y co-ordinates for position of the center and the radius to draw it around.
+&nbsp; ```circles``` is populated by the Hough transform OpenCV function, containing an array of detected circles. Each circle itself is an array of the x, y co-ordinates for position of the center and the radius to draw it around.
 
 We call the circle function twice, to draw the circle and the center point.
 
@@ -77,7 +76,7 @@ Once all is done we show it in a form using the ```imshow``` call.
 
 The full code listing is as follows
 
-```
+```python
 import numpy as np
 import cv2 as cv
 img = cv.imread('/home/pi/Pictures/Red.jpg',0)

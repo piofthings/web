@@ -12,7 +12,7 @@ In the [introductory post](/blog/open-cv-baby-steps-01.md) we saw how to setup O
 
 Assuming you have one camera connected to your computer/Pi you can connect to the device as shown below. Each capture device you have is numbered starting with zero.
 
-```
+```python
 import cv2
 
 capture_device_index = 0
@@ -25,7 +25,7 @@ The VideoCapture(...) function gives you the capture device. Ideally we want to 
 
 Outside the while loop, we make sure we release the capture device and the close all the windows that OpenCV created.
 
-```
+```python
 while(True):
     ret, frame = cap.read()
     frame = cv2.cvtColor(frame, cv2.IMREAD_COLOR)
@@ -58,13 +58,13 @@ Before we continue, we go back and import ```time``` and ```datetime``` dependen
 
 - We grab one of the fonts available in cv2
 
-```
+```python
     font = cv2.FONT_HERSHEY_SIMPLEX
 ```
 
 - In the while loop, we put in another if condition, to check if user pressed `c` to capture a particular frame.  
 
-```
+```python
     while True:
         if cv2.waitKey(1) & 0xFF == ord('c'):  
             ...
@@ -72,26 +72,26 @@ Before we continue, we go back and import ```time``` and ```datetime``` dependen
 
 - Before we capture the frame we create a text message. The message is a concatenation of frameIndex (a zero based index declared outside the ```while``` loop and incremented for each frame we save) and a time stamp of the moment we capture the frame.
 
-```
+```python
             txt_message = 'Frame: ' + str(frameIndex) + ': ' + str(datetime.datetime.now())
 ```
 - We superimpose the string on the captured frame using the ```putText``` function
 
 
-```
+```python
             cv2.putText(frame, txt_message,(10, height-20), font, 1, (200,255,155), 2, cv2.LINE_AA)
 ```
 
 - Now we write the image to disk using the familiar ```imwrite``` command and increment the frameIndex
 
-```
+```python
             cv2.imwrite('/home/pi/Pictures/recording/frame' + str(frameIndex) + '.jpg', frame)
             frameIndex += 1
 ```
 
 ## The full code listing is as follows
 
-```
+```python
 import cv2
 import time
 import datetime
@@ -127,7 +127,7 @@ cv2.destroyAllWindows()
 
 We can tweak the code slightly to capture snapshots at regular intervals and create a series of images as a time-lapse as follows:
 
-```
+```python
 import numpy as np
 import cv2
 import time

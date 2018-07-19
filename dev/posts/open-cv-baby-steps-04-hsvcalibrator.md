@@ -24,7 +24,7 @@ However, it does support trackbars/slider component, which is all we need to mak
 
 Colour thresholding using HSV values in OpenCV works within a range of 'lower HSV values' and 'upper HSV values'. This means we need six track bars to tweak each value independently. We'll store the values in the following variables: ```uh```, ```us```, ```uv```, ```lh```, ```ls``` and ```lv```. I have set them to an initial value that should track some blue in an image.
 
-```
+```python
 import numpy as np
 import cv2 as cv
 import time
@@ -46,19 +46,19 @@ upper_hsv = np.array([uh,us,uv])
 ```
 We have the target ranges now, lets apply the thresholding and get the masked image. Thanks to OpenCV, it's a single line of code.
 
-```
+```python
 # Threshold the HSV image to get only blue colors
 mask = cv.inRange(hsv, lower_hsv, upper_hsv)
 
 ```
 Since we are going need a reference to the window to which the trackbars need to be added, we'll create a namedWindow
-```
+```python
 window_name = "HSV Calibrator"
 cv.namedWindow(window_name)
 ```
 To create simple trackbars that span the entire length of the parent window we initialise a trackbar component with a name, min and max values, the parent window's name and a delegate function that is called whenever the particular tracker is using. While this is a good way to track changed values, we will for now use the main while loop to retrieve values from the trackbars. But before that we setup the trackbars and assign initial values as defined above:
 
-```
+```python
 
 def nothing(x):
 	print("Trackbar value: " + str(x))
@@ -102,7 +102,7 @@ Finally we simply grab the current value of each tracker and update the ```upper
 
 To keep CPU usage optimal we sleep for 100 milliseconds (without this you could run the CPU at 100%, on my VM I went from 80% to ~5% when I added the ```time.sleep(.1)```
 
-```
+```python
 while(1):
 	# Threshold the HSV image to get only blue colors
     mask = cv.inRange(hsv, lower_hsv, upper_hsv)
@@ -166,4 +166,4 @@ You will see the red ball comes out the worst of the lot. After the intial confu
 ## Conclusion
 To wrap up, we saw how we could up with HSV threshold ranges that could help us identify colours in an image.
 
-Next challenge is to find position of objects based on the colour thresholds we just identified. So we'll grab a video feed and try to analyse position of ball at runtime based on above determined HSV values for each colour. 
+Next challenge is to find position of objects based on the colour thresholds we just identified. So we'll grab a video feed and try to analyse position of ball at runtime based on above determined HSV values for each colour.

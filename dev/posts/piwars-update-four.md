@@ -11,7 +11,7 @@ Two weeks have flown by since the last update and as I sit down to write this I 
 ## Getting started with telemetry
 We started with implementing rudimentary telemetry logging using Python's logger.
 
-```Python
+```python
 
 import os
 import logging

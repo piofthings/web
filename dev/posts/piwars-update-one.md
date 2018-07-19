@@ -50,7 +50,7 @@ For the uninitiated, Tim is the boss at PiBorg and he knows a 'thing or two' rob
 So I hacked up the sample and moved the sweep back into to a different script (centering.py). The test script only flipped between moving left and right.
 
 _centering.py_  
-```
+```python
 
 #!/usr/bin/env python
 # coding: latin-1
@@ -86,7 +86,7 @@ except KeyboardInterrupt:
 ```
 
 _steering.py_  
-```
+```python
 #!/usr/bin/env python
 # coding: latin-1
 
