@@ -17,7 +17,7 @@ I said, oh well, only a few missing dependencies lets install them. After 10 min
 Gingerly I tried to install all the dependencies listed. After a couple of hiccups I finally managed to get the installation going. If you want to avoid the hiccups here is the cleaned up dependency list:  
 
 ```bash
-sudo apt get install ibjpeg-dev libtiff5-dev libjasper-dev libpng12-dev build-essential cmake git pkg-config libavcodec-dev libavformat-dev libswscale-dev libv4l-dev libatlas-base-dev gfortran python3.4-dev python3-numpy python3-scipy python3-matplotlib ipython3 python3-pandas python3-notebook python3-tk libtbb-dev libeigen3-dev yasm libopencore-amrnb-dev libopencore-amrwb-dev libtheora-dev libvorbis-dev libxvidcore-dev libx264-dev libqt4-dev libqt4-opengl-dev sphinx-common texlive-latex-extra libv4l-dev libdc1394-22-dev
+sudo apt-get install libjpeg-dev libtiff5-dev libjasper-dev libpng12-dev build-essential cmake git pkg-config libavcodec-dev libavformat-dev libswscale-dev libv4l-dev libatlas-base-dev gfortran python3.4-dev python3-numpy python3-scipy python3-matplotlib ipython3 python3-pandas python3-notebook python3-tk libtbb-dev libeigen3-dev yasm libopencore-amrnb-dev libopencore-amrwb-dev libtheora-dev libvorbis-dev libxvidcore-dev libx264-dev libqt4-dev libqt4-opengl-dev sphinx-common texlive-latex-extra libv4l-dev libdc1394-22-dev
 ```
 
 As you can see it is a really long list and it takes a good 30 minutes to install it (depends on your internet speed upto a certain extent).
