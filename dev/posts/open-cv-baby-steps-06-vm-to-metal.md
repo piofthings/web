@@ -6,7 +6,7 @@
   "author": "Sumit Kumar Maitra"
 }}}
 
-Last weekend a fellow PiWars competitor (Vijay) pinged me and said my instructions for installing OpenCV on RaspberryPi were not working. OpenCV was getting installed but Python wouldn't load it, with missing dependency errors. My entire OpenCV series is for the sole purposes of a gentle introduction to OpenCV including how to set it up. If it wasn't working, we had a _major_ problem. Time to go digging...
+Last weekend a fellow PiWars competitor ([Vishal](https://electrobotify.wordpress.com/)) pinged me and said my instructions for installing OpenCV on RaspberryPi were not working. OpenCV was getting installed but Python wouldn't load it, with missing dependency errors. My entire OpenCV series is for the sole purposes of a gentle introduction to OpenCV including how to set it up. If it wasn't working, we had a _major_ problem. Time to go digging...
 
 I downloaded the latest Raspbian Stretch and flashed it on a 16Gb SD Card. Popped it in, booted up, let the new Raspbian update itself and installed OpenCV using pip3. Tried to load OpenCV to check it's version and sure enough it went splat! Same error as Vijay was getting.
 
