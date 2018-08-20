@@ -10,7 +10,9 @@ I always wanted to learn OpenCV, because it was a massive step up from my Comput
 
 So finally with the deadline of PiWars 2018 gone, I decided to roll up my sleeves and start learning OpenCV. I am starting this series as someone who doesn't know any OpenCV, only familiar with Python and Linux environments. Don't really know when it will end, but hopefully it will cover doing the PiWars 2018 challenges using a camera.
 
-## Installing OpenCV on Raspbian Desktop
+## Installing OpenCV on Raspbian Desktop (ONLY)
+
+ ** As of August 2018 these instructions apply to Raspbian Desktop ONLY. For RaspberryPi, refer to [my post here.](/blog/opencv-baby-steps-06-from-vm-to-metal) **
 
 To be fair, getting started with OpenCV used to be pretty daunting until now. Recently Ben Nuttall and Dave Hones of the RaspberryPi foundation have done something super cool, they built [PiWheels](www.piwheels.org). Basically it is a Python Wheels host for Raspberry Pi specific ARM builds of python libraries. This makes it easier to use certain libraries that don't have ARM versions hosted by PyPi. Included in this list of libraries is OpenCV with all optimisations for Raspberry Pi turned on. There is no reason to fear OpenCV installation any more!
 
