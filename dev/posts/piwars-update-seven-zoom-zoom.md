@@ -1,6 +1,6 @@
 {{{
   "title": "Update 7: Zoom Zoom... some progress at last",
-  "tags": ["piwars","robotics","RaspberryPi","piwars-2018"],
+  "tags": ["piwars","robotics","RaspberryPi","piwars-2018", "Pixy"],
   "category": "Robotics",
   "date": "March 28, 2018",
   "author": "Sumit Kumar Maitra"
