@@ -1,6 +1,6 @@
 {{{
   "title": "Open CV Baby steps 2: Capturing video frames",
-  "tags": ["OpenCV","Raspbian", "RaspberryPi"],
+  "tags": ["OpenCV","Raspbian", "RaspberryPi", "piwars-2019"],
   "category": "Computer Vision",
   "date": "18-June-2018",
   "author": "Sumit Kumar Maitra"

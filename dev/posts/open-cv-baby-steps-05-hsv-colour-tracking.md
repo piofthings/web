@@ -1,6 +1,6 @@
 {{{
   "title": "OpenCV baby steps 5: Tracking multiple colours",
-  "tags": ["OpenCV","Raspbian", "RaspberryPi"],
+  "tags": ["OpenCV","Raspbian", "RaspberryPi", "piwars-2019"],
   "category": "Computer Vision",
   "date": "17-July-2018",
   "author": "Sumit Kumar Maitra"

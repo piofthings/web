@@ -1,6 +1,6 @@
 {{{
   "title": "Open CV Baby Steps 01: Installation",
-  "tags": ["OpenCV","Raspbian", "RaspberryPi"],
+  "tags": ["OpenCV","Raspbian", "RaspberryPi", "piwars-2019"],
   "category": "Computer Vision",
   "date": "14-June-2018",
   "author": "Sumit Kumar Maitra"

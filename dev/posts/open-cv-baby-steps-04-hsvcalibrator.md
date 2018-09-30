@@ -1,6 +1,6 @@
 {{{
   "title": "OpenCV baby steps 4: Building a HSV calibrator",
-  "tags": ["OpenCV","Raspbian", "RaspberryPi"],
+  "tags": ["OpenCV","Raspbian", "RaspberryPi", "piwars-2019"],
   "category": "Computer Vision",
   "date": "26-June-2018",
   "author": "Sumit Kumar Maitra"
