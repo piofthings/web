@@ -1,6 +1,6 @@
 {{{
   "title": "OpenCV Baby steps 6: From VM to metal, OpenCV 3.4.2 on RaspberryPi",
-  "tags": ["OpenCV", "PiWars", "RaspberryPi", "piwars-2019"],
+  "tags": ["OpenCV", "piwars", "RaspberryPi", "piwars-2019"],
   "category": "Computer Vision",
   "date": "August 08, 2018",
   "author": "Sumit Kumar Maitra"

@@ -1,6 +1,6 @@
 {{{
   "title": "PiWars 2019 - So it begins",
-  "tags": ["piwars-2019", "PiWars"],
+  "tags": ["piwars-2019", "piwars"],
   "category": "Robotics",
   "date": "September-18-2018",
   "author": "Sumit Kumar Maitra"
