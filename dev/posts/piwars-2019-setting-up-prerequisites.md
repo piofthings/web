@@ -130,9 +130,21 @@ Hopefully we'll have the Ackerman steering going soon, then I can move on to tes
 Next CAD challenge is the ```Meteor shooter```. I have some half done ideas in Tinkercad, time to redo in Fusion 360.
 
 ### Chucking some Aluminum into the mix
-After I 3D Printed the stalks connected to the motors I realised they wouldn't be smooth and nothing would go smoothly up or down. Given I needed a smooth height adjuster, I resorted to Aluminium rods. Since I don't have access to machining tools, had to buy a 6.35mm Aluminium rod off eBay (Thanks imperial measure for not providing something meaningful like 6.9mm or 7.0mm). These were solid aluminum, so I had to up my 'machining skills' from non-existent to 'can barely drill and tap in aluminium' as these picture demonstrates ![Can barely drill or tap](/posts/images/pi-wars/pw-2019-october-update-barey-dill-tap.jpeg). However I did manage to do all 4 bits for the 4 motors, each of them look like this.
+After I 3D Printed the stalks connected to the motors I realised they wouldn't be smooth when trying to push the chassis up or down using the servos. If the height adjuster wasn't smooth it could jam and leave the robot in an unsteady place, so I resorted to Aluminium stalks. Since I don't have access to machining tools, I bought some 6.35mm Aluminium rod off eBay (Thanks imperial measure for not providing something meaningful like 6.9mm or 7.0mm). These were solid aluminum, so I had to up my machining skills from **non-existent** to _can barely drill and tap in aluminium_ as this picture demonstrates ![Can barely drill or tap](/posts/images/pi-wars/pw-2019-october-update-barey-dill-tap.jpeg). However, I did manage to do all 4 bits for the 4 motors, each of them look like this.
 ![Motor assembly](/posts/images/pi-wars/pw-2019-october-update-motor-assembly.jpeg).
 
 Felt pretty smug about it myself, once it was done :-)
+
+PiWars is all about community and everytime I get stuck or have the doubt the community doesn't fail to respond. Here are some of the helpful tips I received on Twitter regarding tapping:
+
+<blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="en" dir="ltr">So, you mean, tap bits are supposed to be hand turned? No wonder I fluffed my first ever tapping attempt.</p>&mdash; Pi of things (@piofthings) <a href="https://twitter.com/piofthings/status/1051514115422900224?ref_src=twsrc%5Etfw">October 14, 2018</a></blockquote>
+
+<blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="en" dir="ltr">Power tapping is possible but usually utilises a sprung chuck.. I hand tap mostly but often using the lathe tailstock or drill press to hold the tap... But no power...</p>&mdash; concrete dog (@concreted0g) <a href="https://twitter.com/concreted0g/status/1051514482483191810?ref_src=twsrc%5Etfw">October 14, 2018</a></blockquote>
+
+<blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="en" dir="ltr">I use a small battery drill on slow on alu an acrylic,  just remember to turn back every so often to break the swarf off</p>&mdash; Extreme Electronics (@ExtElec) <a href="https://twitter.com/ExtElec/status/1051514451919294465?ref_src=twsrc%5Etfw">October 14, 2018</a></blockquote>
+
+<blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="en" dir="ltr">Yes however you turn the tap the 1/4 back to clear every turn is vital!</p>&mdash; concrete dog (@concreted0g) <a href="https://twitter.com/concreted0g/status/1051514655296954369?ref_src=twsrc%5Etfw">October 14, 2018</a></blockquote>
+
+So there you go, don't be afraid to share your failures and shortcomings. There is a good chance someone will notice and help you out. Don't forget to thank them though :-)
 
 That's about it for now. Hopefully, another one towards the end of the month. Happy robot-ing in the mean time!
