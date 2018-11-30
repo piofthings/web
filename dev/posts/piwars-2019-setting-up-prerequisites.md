@@ -28,7 +28,7 @@ If the MQTT bus turns out inadequate, we will have to go back to Single-Threaded
 
 ### Hello Bot-Hub: The Pre-requisites
 
-BotHub is the NodeJS application that hosts the MQTT Server using Mosca. It will be running on the ```J2 Cruncher``` (the Raspberry Pi 3B+). Following is a dump of the steps I took to setup Redis and NodeJS.
+BotHub is the NodeJS application that hosts the MQTT Server using Mosca. It will be running on the ```Cruncher``` (the Raspberry Pi 3B+). Following is a dump of the steps I took to setup Redis and NodeJS.
 
 Wwe setup some pre-requisites on our Raspberry Pi 3 B+ that's going to be the byte 'Cruncher' for the robot. Its responsibilities including running the MQTT service bus
 
@@ -135,7 +135,7 @@ After I 3D Printed the stalks connected to the motors I realised they wouldn't b
 
 Felt pretty smug about it myself, once it was done :-)
 
-PiWars is all about community and everytime I get stuck or have the doubt the community doesn't fail to respond. Here are some of the helpful tips I received on Twitter regarding tapping:
+PiWars is all about community and everytime I get stuck or have a doubt the community doesn't fail to respond. Here are some of the helpful tips I received on Twitter regarding tapping:
 
 <blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="en" dir="ltr">So, you mean, tap bits are supposed to be hand turned? No wonder I fluffed my first ever tapping attempt.</p>&mdash; Pi of things (@piofthings) <a href="https://twitter.com/piofthings/status/1051514115422900224?ref_src=twsrc%5Etfw">October 14, 2018</a></blockquote>
 
