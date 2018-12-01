@@ -135,7 +135,7 @@ To get it work first thing we had to make sure was ensure the suspension stalk w
 
 The links to attach to the steering motors were as follows:
 
-![Steering link details](/posts/images/pi-wars/pw-2019-steering-link-closeup.jpg)
+![Steering link details](/posts/images/pi-wars/pw-2019-steering-links-closeup.jpg)
 
 Here is a top view of all the links for front wheel steering. Similar mechanism is used for the rear wheels. I realised the mistake I made by bolting the links down, restricting twisting motion, as I was typing this post out. New idea as mentioned below is to replace them with springs in future.
 
