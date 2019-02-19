@@ -10,6 +10,8 @@ Last weekend a fellow PiWars competitor ([Vishal](https://electrobotify.wordpres
 
 I downloaded the latest Raspbian Stretch and flashed it on a 16Gb SD Card. Popped it in, booted up, let the new Raspbian update itself and installed OpenCV using pip3. Tried to load OpenCV to check it's version and sure enough it went splat! Same error as Vishal was getting.
 
+> UPDATE: February 2019. I tried this post and found the latest iteration of OpenCV was still not up to mark. Then I was pointed to this article https://blog.piwheels.org/new-opencv-builds/ by Ben Nutall is now all you need.
+
 ![Dependency error](/posts/images/opencv/step-6-open-cv-3-4-2-error.jpg)
 
 I said, oh well, only a few missing dependencies lets install them. After 10 minutes of error->install->error->install loop I hit an error that couldn't easily track back to a dependency library. Sent a few frantic tweets to Ben Nuttall but he was away so couldn't respond immediately. So I went digging and found [this post](https://quirkymonk.wordpress.com/2015/08/10/how-to-install-opencv-3-0-for-python-3-4-in-debian-jessie/) that looked a bit dated but still applied to Python 3.
