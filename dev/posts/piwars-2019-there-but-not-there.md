@@ -319,7 +319,7 @@ I piggy backed on the Menu system provided in the default examples by PiMoroni. 
 
 
 ## The Meteor shooter
-This one is still being completed, but full credit to Brian Starsky for pointing me to Lego Competition cannons. I was running out of ideas on how to do a spring based projectile launcher, this cannon solved it for me. To save time between reloads I ordered 6 of them (use 5). I modeled a 3D printed scaffold with place for Laser pointer in line with the cannon and motors at the back. This turned out to be very fun project itself.
+This one is still being completed, but full credit to Brian Starkey for pointing me to Lego Competition cannons. I was running out of ideas on how to do a spring based projectile launcher, this cannon solved it for me. To save time between reloads I ordered 6 of them (use 5). I modeled a 3D printed scaffold with place for Laser pointer in line with the cannon and motors at the back. This turned out to be very fun project itself.
 
 ![Meteor shooter - 5 Cannons triggered by 3 Servos](/posts/images/pi-wars/pi-wars-2019-meteor-shooter.jpg)
 _Meteor shooter - 5 Cannons triggered by 3 Servos_
@@ -343,4 +343,4 @@ The aiming lasers were supposed to be triggered by Solid State relays but I didn
 ## In Conclusion
 The next two weeks are going to be mostly sleepless and full of work. Need to get the robot on the ground and practice driving. Once the steering is predictable start integrating all the Open CV code I wrote in the past. In the meantime I might just use the sidekick Tiny4WD for the OpenCV development and testing.
 
-A lot of work remains, and I will be blogging about all of it, either before or after the competition. PiWars is more about community, sharing and learning. There is no point in keeping secrets of what I have stumbled upon, learn share grow continues to be my motto and I am infinitely grateful to the like of Brian Startsky, Douglas Gore, Michael Sendula, @drfootleg, Elliot Pittnam and loads of others who have provided continious guidance and inspiration and at times, brought be back from the brink of giving up! Thanks ya'll...
+A lot of work remains, and I will be blogging about all of it, either before or after the competition. PiWars is more about community, sharing and learning. There is no point in keeping secrets of what I have stumbled upon, learn share grow continues to be my motto and I am infinitely grateful to the like of Brian Starkey, Douglas Gore, Michael Sendula, @drfootleg, Elliot Pittnam and loads of others who have provided continuous guidance and inspiration and at times, brought be back from the brink of giving up! Thanks ya'll...
