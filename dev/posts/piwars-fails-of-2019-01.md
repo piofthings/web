@@ -71,11 +71,9 @@ I was overly optimistic on how quickly I could convert my samples into workable 
 ## Artistic and technical merit
 While everyone I met, loved the looks of the robot, I had much higher goals for its final fit and finish. One of these days I'll get around to doing the windows with acrylic, the gull wing doors operational and front crash guard that looks like the ATV from the series.
 
-(Just saw results of Artistic merit, we can 28th out of 37... clearly needs more 'finishing', anyway, Artistic merit is way too subjective to aim for points in.)
-
 
 ## In Conclusion
-I am literally pick up the pieces of the gruelling attempt. My room is a mess and everytime I look at the bot I feel rather despondent.
+I am literally picking up the pieces of the gruelling attempt. My room is a mess and everytime I look at the bot I feel rather despondent.
 
 However, I will sit down and 'finish' J2 the way I wanted to. I will share more as I learn. Hopefully I'll have energy to come back to another PiWars when it happens.
 
