@@ -9,7 +9,7 @@
 It has been two months since I wrote my last post. It has taken a bit to fully get over the disappointment. But last weekend marked the official end of Robot J2...
 
 ## More torque will do it... or will it!
-In my last post I had mentioned how the robot had poor mechanical stability and I had attributed low torque of the DC motors as its main failing. So I went and got come high torque Pololu motors. Turns out the initial draw of the new motors was so high that my 12V power adapter's voltage would sag and reboot both the Pis.
+In my last post I had mentioned how the robot had poor mechanical stability and I had attributed low torque of the DC motors as its main failing. So I went and got some high torque Pololu motors. Turns out the initial draw of the new motors was so high that my 12V power adapter's voltage would sag and reboot both the Pis.
 
 ## Battery holder
 The issue with the power adapter expedited the new battery box process and I found a real nice 'spring-less' design on [Thingiverse](https://www.thingiverse.com/thing:456900).
@@ -45,7 +45,7 @@ I decided to take the 8mm Aluminium rod I had purchased last year and sand it do
 ![Slide bearings](/posts/images/pi-wars/pi-wars-2019-slide-bearings.jpg)  
 Slide bearings allow rotation as well as translation while holding shaft at the same place steadily. They are mostly use for translation of axes on 3D Printers. If I could replace the 623s with 8mm linear bearings I could provide additional support to the shaft and increase rigidity of the wheel assembly.
 
-Took me a while to whittle down 4 x 100mm bits of 8mm aluminium to 7.8mm each, with nothing but a battery powered hand drill and some sand-paper. Eventually all 4 bits went through the linear bearings.
+Took me a while to whittle down 4 x 100mm bits of 8mm aluminum to 7.8mm each, with nothing but a battery powered hand drill and some sand-paper. Eventually all 4 bits went through the linear bearings.
 
 This made it even clearer that I would now need a new base plate. That combined with the requirement to reduce weight finally did it.
 
