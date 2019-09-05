@@ -1,14 +1,12 @@
 {{{
-  "title": "Setting up Raspbian on VirtualBox",
+  "title": "Setting up Raspbian Desktop VM on VirtualBox",
   "tags": ["Raspbian","VirtualBox", "devenv"],
   "category": "Devops",
   "date": "30-August-2019",
   "author": "Sumit Kumar Maitra"
 }}}
 
-# Setting up a Raspbian Desktop VM using VirtualBox
-
-The RaspberryPi is tiny and dimunitive computer, but I often cannot carry it with me on places like trains for daily commute. In such scenarios it is nice to have the Raspbian Desktop available handy for quick experiments.
+The RaspberryPi is a tiny and diminutive computer, but I often cannot carry it with me on places like trains for daily commute. In such scenarios it is nice to have the Raspbian Desktop available handy for quick experiments.
 
 Setting up the VM is pretty easy
 - Download iso from [official site](https://www.raspberrypi.org/downloads/raspberry-pi-desktop/)
@@ -51,3 +49,5 @@ Once the VM reboots you should have a full screen desktop experience ready for u
 
 ### Other settings
 - Enable 3D Acceleration in the VM's Display settings and give it about 128Mb or RAM
+
+I wrote this down mostly for myself, because I spend way too much time running circles on exact configuration required. I'll come back and update it if I find I missed something the next time.
