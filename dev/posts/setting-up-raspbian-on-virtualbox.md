@@ -1,6 +1,6 @@
 {{{
   "title": "Setting up Raspbian Desktop VM on VirtualBox",
-  "tags": ["Raspbian","VirtualBox", "devenv"],
+  "tags": ["raspbian","virtualbox", "devenv"],
   "category": "Devops",
   "date": "30-August-2019",
   "author": "Sumit Kumar Maitra"
