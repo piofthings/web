@@ -2,7 +2,7 @@
   "title": "Hits, misses and learnings when 3D Printing 'bot parts",
   "tags": ["piwars-2020","3dprinting", "cad"],
   "category": "Robotics",
-  "date": "October 9, 2019",
+  "date": "December 20, 2019",
   "author": "Sumit Kumar Maitra"
 }}}
 
@@ -66,7 +66,9 @@ In the following images you see a much bigger part with lower infill having comp
 ### Breakup your build and test small bits first
 If you have disparate components that need to fit in or work with a 3D Printed part make sure you print out smaller bits and test the integration points.
 
-For example I needed my bush to fit into the chassis as tightly as possible but I didn't want to do _any_ filing or dremel-ing to make it fit. So I printed out a cutup of the base chassis and made sure I got the diameter just right.
+For example I needed my bush to fit into the chassis as tightly as possible but I didn't want to do _any_ filing or dremel-ing to make it fit. So I printed out a cutup of the base chassis and made sure I got the diameter just right. And here is the end result:  
+![Perfect fit](/posts/images/pi-wars/pi-wars-2020-the-perfect-fit.jpg)
+
 
 Here's a video of my adjustable ground clearance system's independent prototype, before I printed the whole chassis.
 
@@ -76,7 +78,9 @@ Here's a video of my adjustable ground clearance system's independent prototype,
 </video>
 
 ### Backlash is a key always account for it
-Some might argue that if you have a dimensionally accurate 3D Printer you can get away by printing without testing smaller bits. But, tolerances are real anyhwere you go (laser printer, CNC machines...) and 3D Printer tolerances (backlash) is dependent on soo many factors, that even if you tuned the printer just before you started you might be caught short by 200 microns (.2 mm). And if you have an inflexible item like a steel bush that you are trying to get to fit into a 3D Printed part, 200 microns is enough to crack your printed object if you try to hammer it in.
+Some might argue that if you have a dimensionally accurate 3D Printer you can get away by printing without testing smaller bits. But, tolerances are real anyhwere you go (laser printer, CNC machines...) and 3D Printer tolerances (backlash) is dependent on soo many factors, that even if you tuned the printer just before you started you might be caught short by 200 microns (.2 mm).
+
+And if you have an inflexible item like a steel bush that you are trying to get to fit into a 3D Printed part, 200 microns is enough to crack your printed object if you try to hammer it in.
 
 ### Design with History turned on
 Most CAD solutions will let you save history or timeline of your build (well Fusion 360 does). It is partly cloud based and its default save mode is in the cloud. So every save is versioned. This is crucial because, you can easily go back in version and or back in development timeline to arrange things in right order.
