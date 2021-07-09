@@ -33,7 +33,7 @@
     "nconf": "^0.8.4",
     "octonode": "^0.9.5",
     "poet": "git+https://github.com/piofthings/poet.git",
-    "pug": "^2.0.3",
+    "pug": "^3.0.1",
     "serve-favicon": "^2.3.0",
     "serve-static": "^1.11.1"
   },
