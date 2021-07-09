@@ -2,7 +2,7 @@
   "title": "PiWars at home 2021: Back to blogging and hello 'Smokey'",
   "tags": ["piwars","piwars-2021"],
   "category": "Robotics",
-  "date": "November 20, 2021",
+  "date": "November 20, 2020",
   "author": "Sumit Maitra"
 }}}
 

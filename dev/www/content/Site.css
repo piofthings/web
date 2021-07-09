@@ -10,7 +10,7 @@ body {
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
-
+line-height: 1.8em;
 }
 .body-content img {
     max-width: 100%;
