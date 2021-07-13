@@ -6,45 +6,38 @@ export class Config {
 
     public currentSettings = new Configuration();
 
-    constructor()
-    {
+    constructor() {
     }
 
-    public load(callback: (currentSettings: Configuration) => void = null) : void
-    {
-        try
-        {
+    public load(callback: (currentSettings: Configuration) => void = null): void {
+        try {
             nconf.file('./webconfig.json');
-            nconf.load((data) =>
-            {
+            nconf.load((data) => {
                 this.currentSettings.key = nconf.get('key');
                 this.currentSettings.cert = nconf.get('cert');
+                this.currentSettings.showDrafts = nconf.get('showDrafts')
+                this.currentSettings.showFuture = nconf.get('showFuture')
                 this.currentSettings.hookconfig = nconf.get('hookconfig');
-                if(callback!=null)
-                {
+                if (callback != null) {
                     callback(this.currentSettings);
                 }
             });
         }
-        catch(error)
-        {
+        catch (error) {
             //console.log(error);
         }
     }
 
-    public set(name: string, value: any): void
-    {
+    public set(name: string, value: any): void {
         nconf.set(name, value);
         (<any>this.currentSettings)[name] = <any>value;
     }
 
-    public get() : Configuration
-    {
+    public get(): Configuration {
         return this.currentSettings;
     }
 
-    public saveSettings(settings: Configuration) : void
-    {
+    public saveSettings(settings: Configuration): void {
         let keys: Array<string> = Object.keys(<any>settings);
         keys.forEach((key: any) => {
             nconf.set(key, (<any>settings)[key]);
@@ -52,8 +45,7 @@ export class Config {
         this.save();
     }
 
-    public save() : void
-    {
+    public save(): void {
         nconf.save((err: any) => {
             fs.readFile('./config.json', (err, data) => {
                 console.dir(JSON.parse(data.toString()))

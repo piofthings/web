@@ -32,6 +32,8 @@ export class web {
                         postsPerPage: 6,
                         posts: __dirname + '/posts',
                         metaFormat: 'json',
+                        showDrafts: config.showDrafts,
+                        showFuture: config.showFuture,
                         routes: {
                             '/blog/:post': 'post',
                             '/blog/:page': 'page',
@@ -85,7 +87,7 @@ export class web {
                             res.render('rss', {
                                 posts: tagPosts,
                                 tag: req.params.bytag,
-                                tagUrl : '/tag/' + req.params.bytag
+                                tagUrl: '/tag/' + req.params.bytag
                             });
                         }
                     });
@@ -98,12 +100,12 @@ export class web {
                     this.app.use(express.static(__dirname + '/www')); // All static stuff from /app/wwww
 
                     this.app.get('/sitemap.xml', (req, res) => {
-                       // Only get the latest posts
-                       var postCount = poet.helpers.getPostCount();
-                       var posts = poet.helpers.getPosts(0, postCount);
-                       res.setHeader('Content-Type', 'application/xml');
-                       res.render('sitemap', { posts: posts });
-                     });
+                        // Only get the latest posts
+                        var postCount = poet.helpers.getPostCount();
+                        var posts = poet.helpers.getPosts(0, postCount);
+                        res.setHeader('Content-Type', 'application/xml');
+                        res.render('sitemap', { posts: posts });
+                    });
 
                     let gitFetcher = new GitFetcher(config.hookconfig); // github web-hook middleware
                     this.app.use(config.hookconfig.route, new GitListener(config.hookconfig, gitFetcher.handleHookEvent).serverHandler);
