@@ -4,7 +4,7 @@
   "category": "Robotics",
   "date": "September 9, 2021",
   "author": "Sumit Maitra",
-  "draft": true
+  "draft": false
 }}}
 
 This is the third post in draft mode that I have about last PiWars (PiWars at Home 2021). A new PiWars has already been announced for 2022. Here I am still trying to catchup with my blogging from last year. Hopefully this one will see the light of the day. This one is about how I made a foldable arena for PiWars challenges. I showed a glimpse in my last post, here are the nitty gritties if you want to build one for yourself.

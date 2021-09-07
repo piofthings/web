@@ -2,8 +2,9 @@
   "title": "PiWars at home 2021: DIY Computer Vision (CV) on a Raspberry Pi Zero W",
   "tags": ["piwars","piwars-2021"],
   "category": "Robotics",
-  "date": "June 28, 2021",
-  "author": "Sumit Maitra"
+  "date": "September 30, 2021",
+  "author": "Sumit Maitra",
+  "draft": true
 }}}
 
 
