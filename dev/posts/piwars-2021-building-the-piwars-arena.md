@@ -2,7 +2,7 @@
   "title": "PiWars at home 2021: The Arena",
   "tags": ["piwars","piwars-2021"],
   "category": "Robotics",
-  "date": "September 9, 2021",
+  "date": "September 7, 2021",
   "author": "Sumit Maitra",
   "draft": false
 }}}
