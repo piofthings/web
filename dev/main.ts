@@ -12,17 +12,15 @@ var favicon = require('serve-favicon');
 var session = require('express-session');
 var bodyParser = require('body-parser');
 
-var fs = require('fs');
 var http = require('http');
-var https = require('https');
-var configService = new Config();
 
 export class web {
     private app: express.Application = express();
+    private configService = new Config();
 
     constructor() {
         try {
-            configService.load((config: Configuration) => {
+            this.configService.load((config: Configuration) => {
 
                 try {
                     this.app.use(bodyParser.json());

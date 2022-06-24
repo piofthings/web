@@ -13,18 +13,23 @@ export class Config {
         try {
             nconf.file('./webconfig.json');
             nconf.load((data) => {
-                this.currentSettings.key = nconf.get('key');
-                this.currentSettings.cert = nconf.get('cert');
-                this.currentSettings.showDrafts = nconf.get('showDrafts')
-                this.currentSettings.showFuture = nconf.get('showFuture')
-                this.currentSettings.hookconfig = nconf.get('hookconfig');
-                if (callback != null) {
-                    callback(this.currentSettings);
+                try {
+                    this.currentSettings.key = nconf.get('key');
+                    this.currentSettings.cert = nconf.get('cert');
+                    this.currentSettings.showDrafts = nconf.get('showDrafts')
+                    this.currentSettings.showFuture = nconf.get('showFuture')
+                    this.currentSettings.hookconfig = nconf.get('hookconfig');
+                    if (callback != null) {
+                        callback(this.currentSettings);
+                    }
+                }
+                catch (error) {
+                    console.log("Error loading config, please checked if `webconfig.json` exists in the `dev` folder!");
                 }
             });
         }
         catch (error) {
-            //console.log(error);
+            console.log("Error loading config, please checked if `webconfig.json` exists in the `dev` folder!");
         }
     }
 

@@ -23,19 +23,23 @@
   "dependencies": {
     "@types/pug": "^2.0.4",
     "body-parser": "^1.15.2",
-    "express": "^4.14.0",
+    "dicer": "^0.3.1",
+    "express": "^4.18.1",
     "express-session": "^1.14.1",
     "hoek": "^5.0.3",
     "http": "0.0.0",
     "marked": "^4.0.10",
     "morgan": "^1.9.1",
-    "multer": "^1.4.2",
+    "multer": "^1.4.5-lts.1",
     "nconf": "^0.11.4",
     "octonode": "^0.9.5",
-    "poet": "git+https://github.com/piofthings/poet.git",
+    "poet": "github:piofthings/poet",
     "pug": "^3.0.1",
     "serve-favicon": "^2.3.0",
     "serve-static": "^1.11.1"
+  },
+  "overrides": {
+    "busboy": "^1.6.0"
   },
   "devDependencies": {
     "@types/crossroads": "0.0.29",
